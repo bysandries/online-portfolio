@@ -20,6 +20,7 @@
   "categories": [
     { "id": "featured", "label": "Featured" },
     { "id": "tools", "label": "Tools & Apps" },
+    { "id": "coursework", "label": "College Coursework" },
     { "id": "frontend", "label": "Front-End Fundamentals" }
   ],
   "projects": [
@@ -89,6 +90,61 @@
       "category": "tools",
       "demoUrl": null,
       "repoUrl": "https://github.com/bysandries/mac-scrcpy-env",
+      "embed": "none"
+    },
+    {
+      "id": "cis251-sql-final",
+      "title": "CIS 251 — SQL Final Project",
+      "tagline": "Relational database build-out & query portfolio in MySQL",
+      "description": "Final project for CIS 251 (Structured Query Language) at Edmonds College: built a complete multi-table HR database in MySQL Workbench from a 500+-record generation script, then demonstrated the full query lifecycle against it.",
+      "highlights": [
+        "Created eight related tables (Names, Addresses, EmailAddresses, PersonalPhone, Job, JobCodeTable, PositionData, DepartmentTable) and wired referential integrity with ALTER TABLE foreign keys",
+        "Verified the data load with UNION'd COUNT(*) record-count reports across every table",
+        "Joined three-plus tables with aliased projections and WHERE filtering to answer business questions",
+        "Inserted new records across four related tables, then proved correctness with LEFT JOIN verification queries"
+      ],
+      "tech": ["MySQL", "SQL", "MySQL Workbench"],
+      "category": "coursework",
+      "demoUrl": null,
+      "repoUrl": null,
+      "embed": "none"
+    },
+    {
+      "id": "cis250-database",
+      "title": "CIS 250 — Database Theory & Design",
+      "tagline": "Full design lifecycle: requirements → ERD → normalized schema",
+      "description": "Capstone for CIS 250 (Database Theory and Design): modeled a complete application database through two full design iterations — requirements gathering, entity-relationship diagramming, normalization, and a validated SQL schema.",
+      "highlights": [
+        "Produced V1 and V2 full-scope design specifications, iterating on feedback",
+        "Normalized the model and expressed it as a validated schema-v2.sql",
+        "Practiced the same systems-analysis workflow used in CIS 233/234 coursework"
+      ],
+      "tech": ["SQL", "ER Modeling", "Normalization"],
+      "category": "coursework",
+      "demoUrl": null,
+      "repoUrl": null,
+      "embed": "none"
+    },
+    {
+      "id": "linkedlist-deque",
+      "title": "CS 143 — LinkedList Deque",
+      "tagline": "Double-ended queue on a doubly-linked list, in Java",
+      "description": "Project 2 for CS 143 (Computer Science III, Java): a double-ended queue implemented on a doubly-linked list — constant-time operations at both ends, iterator support, and edge-case handling for empty and single-node states. Flip to the Code tab to read the implementation.",
+      "tech": ["Java", "Data Structures"],
+      "category": "coursework",
+      "demoUrl": null,
+      "repoUrl": "https://github.com/bysandries/project-2_linkedlistdeque",
+      "embed": "none"
+    },
+    {
+      "id": "cs143-practice",
+      "title": "CS 143 — Midterm Practice",
+      "tagline": "Data-structures drills: stacks, queues, recursion",
+      "description": "Practice problems for the CS 143 Data Structures midterm at Edmonds College (Prof. Frank Shang) — working through stacks, queues, linked lists and recursion in Java. Flip to the Code tab to browse the solutions.",
+      "tech": ["Java", "Data Structures"],
+      "category": "coursework",
+      "demoUrl": null,
+      "repoUrl": "https://github.com/bysandries/cs-143-midterm-practice",
       "embed": "none"
     },
     {

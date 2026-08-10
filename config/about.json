@@ -1,0 +1,25 @@
+{
+  "headline": "Designer first, developer by obsession — from Heredia, Costa Rica to Seattle, WA.",
+  "paragraphs": [
+    "I grew up in Heredia, Costa Rica, where I earned a technical diploma in administrative service management — but spent most of my energy teaching classmates web fundamentals, tutoring math, and designing everything the school would let me design. In 2023 I moved to Seattle to push further, and I've been building ever since.",
+    "I came to code through design. I'm an Adobe Certified Professional and the Lead Graphic Designer at Edmonds College's Center for Students, Engagement & Leadership, and that visual training shapes how I build software: I care about interfaces people actually understand, hierarchy that guides the eye, and details that make a tool feel finished.",
+    "What I love building most are tools that turn messy public data into something people can actually use. The Washington Affordable Housing Search exists because I navigated Seattle's scattered housing landscape myself and knew it could be searchable. The CS143 Notebook and Java visualizer exist because they were the study tools I wished I had. If a problem annoys me twice, I build something.",
+    "Away from the editor: I shoot event photography (a big part of my campus design work), I tutor — math, web fundamentals, Microsoft Office, databases — because teaching something is how I know I've learned it, and I switch between Spanish and English all day, every day."
+  ],
+  "facts": [
+    { "label": "Home base", "value": "Seattle, WA" },
+    { "label": "From", "value": "Heredia, Costa Rica" },
+    { "label": "Languages", "value": "Spanish (native) · English (professional)" },
+    { "label": "Day job", "value": "Lead Graphic Designer, Edmonds College CSEL" },
+    { "label": "Graduating", "value": "Dec 2026 — two AAS-T degrees" },
+    { "label": "Open to", "value": "Full-stack, cloud & applied-AI roles" }
+  ],
+  "interests": [
+    "Event photography",
+    "Teaching & tutoring",
+    "Civic tech & public data",
+    "Design systems & typography",
+    "Study tools & productivity dashboards",
+    "Process automation"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "summary": "Cumulative GPA 3.58 / 4.0 · 163 credits earned at Edmonds College (as of Spring 2026). Two AAS-T degrees in progress, one certificate awarded, and a technical diploma from Costa Rica.",
+  "schools": [
+    {
+      "name": "Edmonds College",
+      "location": "Lynnwood, WA",
+      "period": "2023 – 2026",
+      "degrees": [
+        {
+          "title": "AAS-T — Computer Information Systems",
+          "status": "Jun 2026"
+        },
+        {
+          "title": "AAS-T — Web Application & Cloud Developer",
+          "status": "Expected Dec 2026"
+        },
+        {
+          "title": "Certificate of Completion — CIS: Web Development",
+          "status": "Awarded Jun 2024"
+        }
+      ],
+      "details": [
+        "Coursework spans the full stack: six web-development courses (HTML/CSS through JavaScript frameworks and server-side scripting), the Java CS sequence (CS 141–143), database theory and SQL (CIS 250/251), systems analysis & design (CIS 233/234), enterprise architecture, and application & cloud development tools (CIS 253).",
+        "Complemented by graphic design (ART 225/226), technical writing (ENGL& 235), and project management."
+      ]
+    },
+    {
+      "name": "Ulloa Technical High School",
+      "location": "Heredia, Costa Rica",
+      "period": "2017 – 2022",
+      "degrees": [
+        {
+          "title": "Technical Diploma — Administrative Service Management",
+          "status": "Dec 2022"
+        }
+      ],
+      "details": [
+        "Peer-tutored math for three years, led a Web Fundamentals workshop, and coordinated a 150-student community-service program.",
+        "Served as support technician: built the program's websites and ran virtual workshops."
+      ]
+    }
+  ],
+  "courseLinks": [
+    {
+      "course": "CS 143 — Computer Science III: Data Structures (Java)",
+      "description": "The course that produced the most tooling — beyond the assignments themselves, I built an in-browser Java notebook and a data-structure visualizer to study with.",
+      "projectIds": ["cs143-notebook", "java-visualizer", "linkedlist-deque", "cs143-practice"]
+    },
+    {
+      "course": "CS& 141 / CS 142 — Computer Science I & II (Java)",
+      "description": "Java foundations — and a Chrome-extension drawing panel I built for the CodeStepByStep graphics exercises we practiced on.",
+      "projectIds": ["drawing-panel"]
+    },
+    {
+      "course": "CIS 251 — Structured Query Language",
+      "description": "Hands-on MySQL: schema creation, joins, aggregation, and data-modification with verification queries.",
+      "projectIds": ["cis251-sql-final"]
+    },
+    {
+      "course": "CIS 250 — Database Theory & Design",
+      "description": "The design side of databases: requirements, ER modeling, and normalization through two full spec iterations.",
+      "projectIds": ["cis250-database"]
+    },
+    {
+      "course": "CIS 241–246 — Web Development I–VI",
+      "description": "From hand-coded HTML/CSS through JavaScript frameworks and server-side scripting — the same fundamentals showcased in my from-scratch front-end builds.",
+      "projectIds": ["batabit", "wikipedia-clone", "google-clone", "practical-js"]
+    },
+    {
+      "course": "CIS 253 — Application & Cloud Development Tools",
+      "description": "Cloud tooling and deployment workflows — practiced for real across every Vercel- and pipeline-driven project here, including the housing search engine.",
+      "projectIds": ["wa-housing"]
+    }
+  ],
+  "certifications": [
+    { "title": "AWS Academy Graduate — Cloud Developing", "issuer": "Amazon Web Services Training & Certification", "date": "Jun 2025 · valid through Nov 2027" },
+    { "title": "Adobe Certified Professional — Visual Design", "issuer": "Adobe", "date": "Valid through Nov 2027" },
+    { "title": "Adobe Certified Professional — Graphic Design & Illustration (Illustrator)", "issuer": "Adobe", "date": "Valid through Nov 2027" },
+    { "title": "Adobe Certified Professional — Visual Design (Photoshop)", "issuer": "Adobe", "date": "Nov 2024" },
+    { "title": "IT Specialist — Databases", "issuer": "Certiport (Pearson VUE)", "date": "Nov 2024" },
+    { "title": "IT Specialist — HTML and CSS", "issuer": "Certiport (Pearson VUE)", "date": "Nov 2024" }
+  ]
+}

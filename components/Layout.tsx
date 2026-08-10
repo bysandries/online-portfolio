@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 import Sidebar from "@/components/Sidebar";
 import LivePreview from "@/components/LivePreview";
 import type { PortfolioConfig } from "@/config/types";
@@ -9,10 +10,15 @@ import type { PortfolioConfig } from "@/config/types";
  * Master-detail shell: 1/3 sidebar, 2/3 live preview on desktop (lg+).
  * On mobile the two panes become sequential screens — the project list first,
  * then the preview with a back button — so only one iframe ever exists.
+ * `?project=<id>` deep-links to a specific project (used by the Education page).
  */
 export default function Layout({ config }: { config: PortfolioConfig }) {
-  const [selectedId, setSelectedId] = useState(config.projects[0].id);
-  const [mobilePreview, setMobilePreview] = useState(false);
+  const requested = useSearchParams().get("project");
+  const deepLinked = config.projects.some((p) => p.id === requested);
+  const [selectedId, setSelectedId] = useState(
+    deepLinked ? requested! : config.projects[0].id,
+  );
+  const [mobilePreview, setMobilePreview] = useState(deepLinked);
 
   const selected =
     config.projects.find((p) => p.id === selectedId) ?? config.projects[0];
@@ -23,7 +29,7 @@ export default function Layout({ config }: { config: PortfolioConfig }) {
   };
 
   return (
-    <div className="h-dvh overflow-hidden bg-canvas text-ink lg:grid lg:grid-cols-3">
+    <div className="h-full overflow-hidden bg-canvas text-ink lg:grid lg:grid-cols-3">
       <aside
         className={`h-full overflow-hidden border-edge bg-panel lg:col-span-1 lg:block lg:border-r ${
           mobilePreview ? "hidden" : "block"

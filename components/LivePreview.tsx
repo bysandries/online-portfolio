@@ -82,6 +82,16 @@ function DetailCard({
       <div className="max-w-xl rounded-xl border border-edge bg-panel p-8">
         <h2 className="text-lg font-semibold">{project.title}</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted">{project.description}</p>
+        {project.highlights && (
+          <ul className="mt-4 space-y-1.5">
+            {project.highlights.map((h) => (
+              <li key={h} className="flex gap-2 text-sm leading-relaxed text-muted">
+                <span className="mt-px shrink-0 text-accent">▹</span>
+                {h}
+              </li>
+            ))}
+          </ul>
+        )}
         <div className="mt-5">
           <TechChips tech={project.tech} />
         </div>

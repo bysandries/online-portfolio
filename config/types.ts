@@ -20,6 +20,8 @@ export interface Project {
   embed: EmbedMode;
   /** Shown on the click-to-load facade, e.g. why the demo is deferred. */
   embedNote?: string;
+  /** Bullet points rendered on the detail card — used by coursework write-ups. */
+  highlights?: string[];
 }
 
 export interface Category {
@@ -45,4 +47,55 @@ export interface PortfolioConfig {
   profile: Profile;
   categories: Category[];
   projects: Project[];
+}
+
+export interface ExperienceRole {
+  role: string;
+  org: string;
+  location: string;
+  period: string;
+  note?: string;
+  bullets: string[];
+  tags?: string[];
+}
+
+export interface ExperienceConfig {
+  intro: string;
+  roles: ExperienceRole[];
+  volunteer: ExperienceRole[];
+}
+
+export interface School {
+  name: string;
+  location: string;
+  period: string;
+  degrees: { title: string; status: string }[];
+  details?: string[];
+}
+
+export interface CourseLink {
+  course: string;
+  description: string;
+  /** Ids into projects.json — rendered as deep links to /?project=<id> */
+  projectIds: string[];
+}
+
+export interface Certification {
+  title: string;
+  issuer: string;
+  date: string;
+}
+
+export interface EducationConfig {
+  summary: string;
+  schools: School[];
+  courseLinks: CourseLink[];
+  certifications: Certification[];
+}
+
+export interface AboutConfig {
+  headline: string;
+  paragraphs: string[];
+  facts: { label: string; value: string }[];
+  interests: string[];
 }

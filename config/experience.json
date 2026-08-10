@@ -1,0 +1,131 @@
+{
+  "intro": "Across design, finance, supply chain, hospitality, and IT, the thread is the same: learn the system fast, automate what's slow, and document it so the next person doesn't struggle. Bilingual (Spanish/English) in every role.",
+  "roles": [
+    {
+      "role": "Lead Graphic Designer",
+      "org": "Edmonds College — Center for Students, Engagement & Leadership",
+      "location": "Seattle, WA",
+      "period": "Sep 2025 – Present",
+      "note": "Promoted from Graphic Designer",
+      "bullets": [
+        "Lead the design of promotional materials for campus events, student clubs, and institutional initiatives across print, digital screens, and social formats (Illustrator, Photoshop, InDesign).",
+        "Manage and update college website content through CMS software, keeping student-facing communication accurate and current.",
+        "Provide design feedback and technical mentorship to team members; coordinate volunteers and logistics during event execution.",
+        "Conduct event photography and manage printer operations for minimal downtime."
+      ],
+      "tags": ["Adobe CC", "CMS", "Mentorship", "Event Ops"]
+    },
+    {
+      "role": "Graphic Designer",
+      "org": "Edmonds College — Center for Students, Engagement & Leadership",
+      "location": "Seattle, WA",
+      "period": "Dec 2023 – Aug 2025",
+      "bullets": [
+        "Designed flyers, digital materials, and promotional assets with Adobe Creative Cloud to drive event visibility and student engagement.",
+        "Provided bilingual front-desk support, triaging student and staff inquiries in English and Spanish.",
+        "Maintained website content via CMS; organized shared media libraries; supported photo and video sessions for promotional content."
+      ],
+      "tags": ["Adobe CC", "Bilingual Support", "CMS"]
+    },
+    {
+      "role": "Service Team Associate",
+      "org": "Panda Restaurant Group",
+      "location": "Seattle, WA",
+      "period": "Oct 2025 – Feb 2026",
+      "bullets": [
+        "Facilitated high-volume guest interactions in dining and drive-thru, resolving menu, ingredient, and allergen questions.",
+        "Managed POS transactions with high precision — cash handling, change distribution, promotional discounts.",
+        "Drove sales through consistent upselling while enforcing strict food-safety and sanitation protocols."
+      ],
+      "tags": ["POS", "High Volume", "Food Safety"]
+    },
+    {
+      "role": "Spanish & English Port Services Agent",
+      "org": "Metro Cruise Services",
+      "location": "Seattle, WA",
+      "period": "May 2025 – Oct 2025",
+      "note": "Celebrity · Royal Caribbean · Cunard · Carnival",
+      "bullets": [
+        "Delivered bilingual check-in and travel-document verification for hundreds of international cruise guests daily, recovering missing paperwork under time pressure.",
+        "Directed passenger flow through the terminal as Agent Directional, reducing bottlenecks at embarkation and debarkation.",
+        "Supported accessibility and incident response — wheelchair escorts, lost-luggage intake — logging details for follow-through."
+      ],
+      "tags": ["Bilingual", "Operations", "Compliance"]
+    },
+    {
+      "role": "Office Assistant & Computer Tutor",
+      "org": "TRIO Student Support Services — Edmonds College",
+      "location": "Seattle, WA",
+      "period": "Oct 2023 – Dec 2023",
+      "bullets": [
+        "Tutored students in Microsoft Office and database fundamentals, improving self-service and reducing repeat questions.",
+        "Developed and maintained a front-desk procedures manual that streamlined onboarding and daily workflow.",
+        "Managed appointment calendars and a database management system, keeping records accurate and current."
+      ],
+      "tags": ["Tutoring", "Documentation", "Databases"]
+    },
+    {
+      "role": "Accounts Payable Analyst",
+      "org": "Procter & Gamble",
+      "location": "San José, Costa Rica",
+      "period": "Jan 2023 – May 2023",
+      "bullets": [
+        "Analyzed and resolved invoice discrepancies for suppliers across North and Latin America in SAP FI, meeting processing SLAs and avoiding penalties.",
+        "Implemented automation with KNIME and SAP FI that cut invoice handling time by over 95%.",
+        "Automated AP reporting with advanced Excel; documented process improvements into SOPs.",
+        "Created how-to videos and visual status reports that gave managers workload visibility for faster decisions."
+      ],
+      "tags": ["SAP FI", "KNIME", "Excel", "Automation"]
+    },
+    {
+      "role": "Site Integrated Planning — Capability Scholar (Internship)",
+      "org": "Procter & Gamble",
+      "location": "San José, Costa Rica",
+      "period": "Oct 2022 – Dec 2022",
+      "bullets": [
+        "Automated report generation with Excel VBA, reducing processing time by 70% for supply-chain analytics.",
+        "Managed and cleaned supply-chain master data in SAP SCM, preventing ordering and production issues across Latin American factories.",
+        "Led cross-functional meetings and coordinated planners across all LATAM factories, documenting actions and follow-ups."
+      ],
+      "tags": ["Excel VBA", "SAP SCM", "Supply Chain"]
+    }
+  ],
+  "volunteer": [
+    {
+      "role": "Peer Tutor",
+      "org": "Ulloa Technical High School",
+      "location": "Heredia, Costa Rica",
+      "period": "Feb 2020 – Nov 2022",
+      "bullets": [
+        "Tutored 10th–12th graders in math; led a Web Fundamentals workshop teaching peers HTML, CSS, and JavaScript basics."
+      ]
+    },
+    {
+      "role": "Support Technician",
+      "org": "Ulloa Technical High School",
+      "location": "Heredia, Costa Rica",
+      "period": "Mar 2022 – Nov 2022",
+      "bullets": [
+        "Built websites promoting volunteering services and coordinated virtual workshops for 150 students; tracked volunteer hours and produced final reports and promotional video."
+      ]
+    },
+    {
+      "role": "Executive Volunteer — Community Service Program",
+      "org": "Ulloa Technical High School",
+      "location": "Heredia, Costa Rica",
+      "period": "May 2021 – Dec 2021",
+      "bullets": [
+        "Coordinated a community-service program for 150 senior students, organizing virtual workshops and tracking completion in Excel."
+      ]
+    },
+    {
+      "role": "Graphic Designer (Volunteer)",
+      "org": "Odontoclínica Integral del Este",
+      "location": "Costa Rica",
+      "period": "Jan 2020 – Dec 2021",
+      "bullets": [
+        "Created social-media content in Photoshop that boosted online visibility for a dental clinic."
+      ]
+    }
+  ]
+}

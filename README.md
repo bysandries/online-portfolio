@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Interactive Portfolio — Luis Bedoya Sandries
 
-## Getting Started
+A master-detail portfolio: **1/3 sidebar** for project navigation, **2/3 live preview** that embeds each deployed project in-page via iframe, with a **Preview / Code toggle** that opens any public repo in VS Code for the Web.
 
-First, run the development server:
+## Architecture
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+| Concern | Choice |
+| --- | --- |
+| Hosting | Vercel (serverless edge network) |
+| CI/CD | GitHub → Vercel preview deployments on every PR |
+| Framework | Next.js (App Router) + Tailwind CSS |
+| Content | `config/projects.json` — static, version-controlled, no CMS |
+| Code view | `github1s.com` (microsoft/vscode web build; github.dev blocks framing) |
+| Memory management | React `key`-bound iframe unmounting (see below) |
+
+## Performance & memory strategy
+
+Several showcased projects are computationally heavy — the Universal CS143 Notebook and the Java Data-Structure Visualizer boot a full Java toolchain (CheerpJ/WASM) in the browser, and the Code view boots the VS Code workbench. The portfolio keeps client-side CPU and memory in check by:
+
+1. **One iframe, ever.** Only the selected project's current view is mounted; there is no hidden tab-stack of live documents.
+2. **`key`-bound unmounting.** The iframe's React `key` is `${projectId}:${mode}:${instance}`. Switching projects, toggling Preview/Code, or hitting Reload changes the key, so React tears the old iframe out of the DOM and the browser garbage-collects that document's entire heap — WASM memory, Leaflet tiles, JVM state, VS Code workbench.
+3. **Click-to-load facades.** Projects flagged `embed: "click"` in `config/projects.json` render a description card first; the WASM demo loads only on explicit user action. The Code view likewise only mounts when toggled.
+
+## Repository structure
+
+```
+├── components/
+│   ├── Sidebar.tsx         # 1/3 panel: project navigation
+│   ├── LivePreview.tsx     # 2/3 panel: iframe lifecycle, Preview/Code toggle, error boundary
+│   └── Layout.tsx          # Master-detail shell (responsive)
+├── config/
+│   ├── projects.json       # Single source of truth for portfolio content
+│   └── types.ts            # Typed contract for the config
+├── app/                    # Next.js App Router entry
+└── vercel.json             # Security headers
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Adding a project
 
-## Learn More
+Edit `config/projects.json` — no code changes needed. Set `embed` to `"auto"` for lightweight demos, `"click"` for heavy ones (WASM/large bundles), or `"none"` for code-only projects. The Code toggle appears automatically whenever `repoUrl` points at a public GitHub repo.
 
-To learn more about Next.js, take a look at the following resources:
+## Rollback
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Every commit is an immutable Vercel deployment. Bad deploy → Vercel Dashboard → Deployments → previous build → **Promote to Production**, then `git revert <hash>` to realign the repo.

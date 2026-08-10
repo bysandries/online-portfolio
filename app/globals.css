@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
+/* Single committed dark-navy look — brand palette from the GitHub profile:
+   #1496CD accent · #1B2A4A navy · #B5D4E6 light blue */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --canvas: #0b1220;
+  --panel: #101a2e;
+  --panel-raised: #16233c;
+  --edge: #1e2c49;
+  --ink: #e6edf6;
+  --muted: #8fa3bf;
+  --accent: #1496cd;
+  --accent-hover: #1178a5;
+  --accent-soft: #b5d4e6;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-canvas: var(--canvas);
+  --color-panel: var(--panel);
+  --color-panel-raised: var(--panel-raised);
+  --color-edge: var(--edge);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-soft: var(--accent-soft);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
 }

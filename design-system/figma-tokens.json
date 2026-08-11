@@ -1,0 +1,249 @@
+{
+  "global": {
+    "color": {
+      "canvas": {
+        "value": "#0b1220",
+        "type": "color",
+        "description": "Page background — dark navy base"
+      },
+      "panel": {
+        "value": "#101a2e",
+        "type": "color",
+        "description": "Card / header surface"
+      },
+      "panel-raised": {
+        "value": "#16233c",
+        "type": "color",
+        "description": "Raised surface: active nav item, tech tags, inline code"
+      },
+      "edge": {
+        "value": "#1e2c49",
+        "type": "color",
+        "description": "1px borders and dividers"
+      },
+      "ink": {
+        "value": "#e6edf6",
+        "type": "color",
+        "description": "Primary text"
+      },
+      "muted": {
+        "value": "#8fa3bf",
+        "type": "color",
+        "description": "Secondary text, section labels"
+      },
+      "accent": {
+        "value": "#1496cd",
+        "type": "color",
+        "description": "Brand blue — links, active states, primary buttons (from GitHub profile palette)"
+      },
+      "accent-hover": {
+        "value": "#1178a5",
+        "type": "color",
+        "description": "Primary button hover"
+      },
+      "accent-soft": {
+        "value": "#b5d4e6",
+        "type": "color",
+        "description": "Soft blue — chips, taglines, secondary link text"
+      },
+      "cork": {
+        "value": "#c19a5b",
+        "type": "color",
+        "description": "Cork board surface base (textured with noise gradients in CSS)"
+      },
+      "polaroid": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "Flyer polaroid frame"
+      },
+      "pin-red": {
+        "value": "#d61f1f",
+        "type": "color",
+        "description": "Push pin body (radial: #ff8a8a → #d61f1f 60% → #8e0f0f)"
+      },
+      "pin-red-light": {
+        "value": "#ff8a8a",
+        "type": "color",
+        "description": "Push pin highlight"
+      },
+      "pin-red-dark": {
+        "value": "#8e0f0f",
+        "type": "color",
+        "description": "Push pin shadow edge"
+      },
+      "scrim": {
+        "value": "rgba(20,14,8,0.92)",
+        "type": "color",
+        "description": "Lightbox backdrop — warm near-black"
+      },
+      "lightbox-caption": {
+        "value": "#f3e9da",
+        "type": "color",
+        "description": "Lightbox title text"
+      },
+      "lightbox-caption-muted": {
+        "value": "#cbb89a",
+        "type": "color",
+        "description": "Lightbox subtitle text"
+      }
+    },
+    "fontFamilies": {
+      "sans": { "value": "Geist", "type": "fontFamilies" },
+      "mono": { "value": "Geist Mono", "type": "fontFamilies" }
+    },
+    "typography": {
+      "display": {
+        "value": {
+          "fontFamily": "{fontFamilies.sans}",
+          "fontWeight": "700",
+          "fontSize": "48",
+          "lineHeight": "100%",
+          "letterSpacing": "-0.025em"
+        },
+        "type": "typography",
+        "description": "Landing hero name (text-5xl, sm+); 36px on mobile"
+      },
+      "h1": {
+        "value": {
+          "fontFamily": "{fontFamilies.sans}",
+          "fontWeight": "700",
+          "fontSize": "24",
+          "lineHeight": "133%",
+          "letterSpacing": "-0.025em"
+        },
+        "type": "typography",
+        "description": "Page titles (text-2xl tracking-tight)"
+      },
+      "h2": {
+        "value": {
+          "fontFamily": "{fontFamilies.sans}",
+          "fontWeight": "600",
+          "fontSize": "18",
+          "lineHeight": "155%",
+          "letterSpacing": "-0.025em"
+        },
+        "type": "typography",
+        "description": "Post headings (text-lg semibold)"
+      },
+      "section-label": {
+        "value": {
+          "fontFamily": "{fontFamilies.sans}",
+          "fontWeight": "600",
+          "fontSize": "11",
+          "lineHeight": "145%",
+          "letterSpacing": "0.1em",
+          "textCase": "uppercase"
+        },
+        "type": "typography",
+        "description": "UPPERCASE tracking-widest section labels in muted"
+      },
+      "card-title": {
+        "value": {
+          "fontFamily": "{fontFamilies.sans}",
+          "fontWeight": "600",
+          "fontSize": "14",
+          "lineHeight": "137%"
+        },
+        "type": "typography",
+        "description": "Card titles (text-sm semibold leading-snug)"
+      },
+      "body": {
+        "value": {
+          "fontFamily": "{fontFamilies.sans}",
+          "fontWeight": "400",
+          "fontSize": "14",
+          "lineHeight": "162%"
+        },
+        "type": "typography",
+        "description": "Body copy (text-sm leading-relaxed)"
+      },
+      "caption": {
+        "value": {
+          "fontFamily": "{fontFamilies.sans}",
+          "fontWeight": "400",
+          "fontSize": "12",
+          "lineHeight": "162%"
+        },
+        "type": "typography",
+        "description": "Card descriptions, blurbs (text-xs leading-relaxed, usually muted)"
+      },
+      "chip": {
+        "value": {
+          "fontFamily": "{fontFamilies.mono}",
+          "fontWeight": "400",
+          "fontSize": "11",
+          "lineHeight": "145%"
+        },
+        "type": "typography",
+        "description": "Credential chips, dates (font-mono text-[11px] accent-soft)"
+      },
+      "tag": {
+        "value": {
+          "fontFamily": "{fontFamilies.mono}",
+          "fontWeight": "400",
+          "fontSize": "10",
+          "lineHeight": "145%"
+        },
+        "type": "typography",
+        "description": "Tech tags (font-mono text-[10px] accent-soft on panel-raised)"
+      }
+    },
+    "borderRadius": {
+      "card": { "value": "12", "type": "borderRadius", "description": "rounded-xl — cards, cork board, pre blocks" },
+      "control": { "value": "6", "type": "borderRadius", "description": "rounded-md — buttons, nav items, chips" },
+      "tag": { "value": "4", "type": "borderRadius", "description": "rounded — tech tags, inline code" },
+      "polaroid": { "value": "2", "type": "borderRadius", "description": "flyer polaroid frame" }
+    },
+    "borderWidth": {
+      "default": { "value": "1", "type": "borderWidth", "description": "All borders use edge color at 1px" }
+    },
+    "spacing": {
+      "1": { "value": "4", "type": "spacing" },
+      "2": { "value": "8", "type": "spacing" },
+      "3": { "value": "12", "type": "spacing" },
+      "4": { "value": "16", "type": "spacing" },
+      "5": { "value": "20", "type": "spacing", "description": "Card padding (compact)" },
+      "6": { "value": "24", "type": "spacing", "description": "Card padding (default), page gutter px-6" },
+      "8": { "value": "32", "type": "spacing" },
+      "12": { "value": "48", "type": "spacing", "description": "Page top/bottom py-12" },
+      "14": { "value": "56", "type": "spacing", "description": "Landing section padding py-14" }
+    },
+    "sizing": {
+      "header-height": { "value": "48", "type": "sizing", "description": "h-12 site header" },
+      "content-narrow": { "value": "768", "type": "sizing", "description": "max-w-3xl — blog, education" },
+      "content-wide": { "value": "1024", "type": "sizing", "description": "max-w-5xl — landing sections" },
+      "content-board": { "value": "1152", "type": "sizing", "description": "max-w-6xl — designs page" }
+    },
+    "boxShadow": {
+      "polaroid": {
+        "value": [
+          { "x": "0", "y": "6", "blur": "14", "spread": "0", "color": "rgba(0,0,0,0.32)", "type": "dropShadow" },
+          { "x": "0", "y": "2", "blur": "4", "spread": "0", "color": "rgba(0,0,0,0.2)", "type": "dropShadow" }
+        ],
+        "type": "boxShadow",
+        "description": "Flyer card at rest"
+      },
+      "polaroid-lifted": {
+        "value": [
+          { "x": "0", "y": "18", "blur": "36", "spread": "0", "color": "rgba(0,0,0,0.45)", "type": "dropShadow" },
+          { "x": "0", "y": "4", "blur": "8", "spread": "0", "color": "rgba(0,0,0,0.3)", "type": "dropShadow" }
+        ],
+        "type": "boxShadow",
+        "description": "Flyer card while dragging"
+      },
+      "lightbox-image": {
+        "value": [
+          { "x": "0", "y": "20", "blur": "60", "spread": "0", "color": "rgba(0,0,0,0.6)", "type": "dropShadow" }
+        ],
+        "type": "boxShadow"
+      },
+      "cork-inset": {
+        "value": [
+          { "x": "0", "y": "0", "blur": "60", "spread": "0", "color": "rgba(60,35,10,0.35)", "type": "innerShadow" }
+        ],
+        "type": "boxShadow",
+        "description": "Cork board vignette"
+      }
+    }
+  }
+}

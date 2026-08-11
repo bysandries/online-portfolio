@@ -95,6 +95,27 @@ export interface EducationConfig {
   certifications: Certification[];
 }
 
+export interface FlyerItem {
+  /** Quality rank from the original curation — 1 is best; doubles as a stable id. */
+  rank: number;
+  title: string;
+  /** e.g. "Spring 2026" */
+  quarter: string;
+  /** e.g. "SP26" */
+  quarterCode: string;
+  score: number;
+  note: string;
+  /** Public paths to the full-size and thumbnail webp. */
+  image: string;
+  thumb: string;
+  /** Shown on the landing page's designs section. */
+  featured?: boolean;
+}
+
+export interface FlyersConfig {
+  flyers: FlyerItem[];
+}
+
 export interface AboutConfig {
   headline: string;
   paragraphs: string[];

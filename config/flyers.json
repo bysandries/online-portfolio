@@ -1,0 +1,408 @@
+{
+  "flyers": [
+    {
+      "rank": 1,
+      "title": "SAB - Red Cross Blood Drive",
+      "quarter": "Spring 2026",
+      "quarterCode": "SP26",
+      "score": 8.5,
+      "note": "Red Cross 'You are someone's type'; clever, clean, top-tier",
+      "image": "/designs/SP26/01-SP26-SAB-Red-Cross-Blood-Drive-Flyer.webp",
+      "thumb": "/designs/SP26/thumb/01-SP26-SAB-Red-Cross-Blood-Drive-Flyer.webp",
+      "featured": true
+    },
+    {
+      "rank": 2,
+      "title": "SAB - Triton Field Day",
+      "quarter": "Spring 2026",
+      "quarterCode": "SP26",
+      "score": 8.5,
+      "note": "Triton Field Day 'Log Off. Game On.'; modern dark, polaroids",
+      "image": "/designs/SP26/02-SP26-SAB-Triton-Field-Day-Flyer.webp",
+      "thumb": "/designs/SP26/thumb/02-SP26-SAB-Triton-Field-Day-Flyer.webp",
+      "featured": true
+    },
+    {
+      "rank": 6,
+      "title": "Service-Learning - Make a Difference Day",
+      "quarter": "Fall 2025",
+      "quarterCode": "FA25",
+      "score": 8,
+      "note": "'Make a Difference Day'; bold green display type",
+      "image": "/designs/FA25/06-FA25-Service-Learning-Make-a-Difference-Day-FA25-Service-Learning-Make-a-Differe.webp",
+      "thumb": "/designs/FA25/thumb/06-FA25-Service-Learning-Make-a-Difference-Day-FA25-Service-Learning-Make-a-Differe.webp",
+      "featured": true
+    },
+    {
+      "rank": 7,
+      "title": "TGR - Fighting Tournament",
+      "quarter": "Spring 2024",
+      "quarterCode": "SP24",
+      "score": 8,
+      "note": "'WANTED: Best Fighter'; vintage poster concept, strong",
+      "image": "/designs/SP24/07-SP24-TGR-Fighting-Tournament-Editable.webp",
+      "thumb": "/designs/SP24/thumb/07-SP24-TGR-Fighting-Tournament-Editable.webp",
+      "featured": true
+    },
+    {
+      "rank": 10,
+      "title": "SO - Seeking Justice - A Critical Discussion on Missing and Murdered Indigenous People",
+      "quarter": "Spring 2026",
+      "quarterCode": "SP26",
+      "score": 8,
+      "note": "'Seeking Justice'; cinematic dark portrait, strong mood",
+      "image": "/designs/SP26/10-SO-Seeking-Justice-A-Critical-Discussion-on-Missing-and-Murdered-Indigenous-Peop.webp",
+      "thumb": "/designs/SP26/thumb/10-SO-Seeking-Justice-A-Critical-Discussion-on-Missing-and-Murdered-Indigenous-Peop.webp"
+    },
+    {
+      "rank": 11,
+      "title": "Triton Game Room - Pool Tournament",
+      "quarter": "Spring 2026",
+      "quarterCode": "SP26",
+      "score": 8,
+      "note": "Pool Tournament; green felt, 8-ball, retro",
+      "image": "/designs/SP26/11-SP26-Triton-Game-Room-Pool-Tournament-Flyer.webp",
+      "thumb": "/designs/SP26/thumb/11-SP26-Triton-Game-Room-Pool-Tournament-Flyer.webp"
+    },
+    {
+      "rank": 13,
+      "title": "Green Team - A Bugs Life",
+      "quarter": "Fall 2024",
+      "quarterCode": "FA24",
+      "score": 7.5,
+      "note": "'A Bugs Life' clean playful illustration",
+      "image": "/designs/FA24/13-FA24-Green-Team-A-Bugs-Life-Flyer.webp",
+      "thumb": "/designs/FA24/thumb/13-FA24-Green-Team-A-Bugs-Life-Flyer.webp"
+    },
+    {
+      "rank": 20,
+      "title": "Athletics - Triton Game Day - Halloween Edition",
+      "quarter": "Spring 2024",
+      "quarterCode": "SP24",
+      "score": 7.5,
+      "note": "Game Day 'Spook Out'; haunted-house theme",
+      "image": "/designs/SP24/20-SP24-Athletics-Triton-Game-Day-Halloween-Edition-Not-Publishing-Approved-Editabl.webp",
+      "thumb": "/designs/SP24/thumb/20-SP24-Athletics-Triton-Game-Day-Halloween-Edition-Not-Publishing-Approved-Editabl.webp"
+    },
+    {
+      "rank": 24,
+      "title": "CABC - Celebrate Diversity",
+      "quarter": "Spring 2026",
+      "quarterCode": "SP26",
+      "score": 7.5,
+      "note": "Celebrate Diversity; fun food-day icons",
+      "image": "/designs/SP26/24-SP26-CABC-Celebrate-Diversity-Flyer.webp",
+      "thumb": "/designs/SP26/thumb/24-SP26-CABC-Celebrate-Diversity-Flyer.webp"
+    },
+    {
+      "rank": 25,
+      "title": "Edmonds College x Nourishing Network Food Drive",
+      "quarter": "Spring 2026",
+      "quarterCode": "SP26",
+      "score": 7.5,
+      "note": "Food Drive Competition; pineapple mascot, fun",
+      "image": "/designs/SP26/25-SP26-Edmonds-College-x-Nourishing-Network-Food-Drive-Flyer.webp",
+      "thumb": "/designs/SP26/thumb/25-SP26-Edmonds-College-x-Nourishing-Network-Food-Drive-Flyer.webp"
+    },
+    {
+      "rank": 26,
+      "title": "Green Team - A Day at Discovery Park",
+      "quarter": "Spring 2026",
+      "quarterCode": "SP26",
+      "score": 7.5,
+      "note": "A Day at Discovery Park; lighthouse illustration",
+      "image": "/designs/SP26/26-SP26-Green-Team-A-Day-at-Discovery-Park-Flyer.webp",
+      "thumb": "/designs/SP26/thumb/26-SP26-Green-Team-A-Day-at-Discovery-Park-Flyer.webp"
+    },
+    {
+      "rank": 27,
+      "title": "SO - Edmonds College Spring Debate Tournament 2026",
+      "quarter": "Spring 2026",
+      "quarterCode": "SP26",
+      "score": 7.5,
+      "note": "Spring Debate; navy silhouettes, good contrast",
+      "image": "/designs/SP26/27-SO-Edmonds-College-Spring-Debate-Tournament-2026.webp",
+      "thumb": "/designs/SP26/thumb/27-SO-Edmonds-College-Spring-Debate-Tournament-2026.webp"
+    },
+    {
+      "rank": 29,
+      "title": "FA25 - SO - Club Showdown",
+      "quarter": "Summer 2025",
+      "quarterCode": "SU25",
+      "score": 7.5,
+      "note": "Club Showdown; bold, energetic",
+      "image": "/designs/SU25/29-SU25-FA25-SO-Club-Showdown-FA25-SO-Club-Showdown.webp",
+      "thumb": "/designs/SU25/thumb/29-SU25-FA25-SO-Club-Showdown-FA25-SO-Club-Showdown.webp"
+    },
+    {
+      "rank": 31,
+      "title": "CSCDI - Valentine Chocolate Delights",
+      "quarter": "Winter 2024",
+      "quarterCode": "WN24",
+      "score": 7.5,
+      "note": "Valentine Chocolate Delights; cute themed",
+      "image": "/designs/WN24/31-WN24-CSCDI-Valentine-Chocolate-Delights-Editable.webp",
+      "thumb": "/designs/WN24/thumb/31-WN24-CSCDI-Valentine-Chocolate-Delights-Editable.webp"
+    },
+    {
+      "rank": 32,
+      "title": "CSDCI - FASFA UPDATES & FSA ID",
+      "quarter": "Winter 2024",
+      "quarterCode": "WN24",
+      "score": 7.5,
+      "note": "FAFSA Updates; clean, good hierarchy",
+      "image": "/designs/WN24/32-WN24-CSDCI-FASFA-UPDATES-FSA-ID-Editable.webp",
+      "thumb": "/designs/WN24/thumb/32-WN24-CSDCI-FASFA-UPDATES-FSA-ID-Editable.webp"
+    },
+    {
+      "rank": 33,
+      "title": "ASEC - Project Applications for TIMC Committee",
+      "quarter": "Winter 2025",
+      "quarterCode": "WN25",
+      "score": 7.5,
+      "note": "'Propose a Project'; modern phone mockup",
+      "image": "/designs/WN25/33-WN25-ASEC-Project-Applications-for-TIMC-Committee-WN25-Flyer-V3.webp",
+      "thumb": "/designs/WN25/thumb/33-WN25-ASEC-Project-Applications-for-TIMC-Committee-WN25-Flyer-V3.webp"
+    },
+    {
+      "rank": 42,
+      "title": "Food Pantry - Documentary Viewing Hungry to Learn (2019) Updated",
+      "quarter": "Fall 2024",
+      "quarterCode": "FA24",
+      "score": 7,
+      "note": "'Hungry to Learn' bold type over photo; strong contrast",
+      "image": "/designs/FA24/42-FA24-Food-Pantry-Documentary-Viewing-Hungry-to-Learn-2019-Updated-Flyer.webp",
+      "thumb": "/designs/FA24/thumb/42-FA24-Food-Pantry-Documentary-Viewing-Hungry-to-Learn-2019-Updated-Flyer.webp"
+    },
+    {
+      "rank": 45,
+      "title": "SO - International Club - General Marketing",
+      "quarter": "Fall 2024",
+      "quarterCode": "FA24",
+      "score": 7,
+      "note": "International Culture Club; bold globe mascot",
+      "image": "/designs/FA24/45-FA24-SO-International-Club-General-Marketing-Flyer.webp",
+      "thumb": "/designs/FA24/thumb/45-FA24-SO-International-Club-General-Marketing-Flyer.webp"
+    },
+    {
+      "rank": 50,
+      "title": "SO - Jewish Club General Information",
+      "quarter": "Spring 2024",
+      "quarterCode": "SP24",
+      "score": 7,
+      "note": "Jewish Student Assoc.; blue line art, themed",
+      "image": "/designs/SP24/50-SP24-SO-Jewish-Club-General-Information-Editable.webp",
+      "thumb": "/designs/SP24/thumb/50-SP24-SO-Jewish-Club-General-Information-Editable.webp"
+    },
+    {
+      "rank": 51,
+      "title": "SO - Movie Club General Information",
+      "quarter": "Spring 2024",
+      "quarterCode": "SP24",
+      "score": 7,
+      "note": "Movie Club; film-reel retro frame",
+      "image": "/designs/SP24/51-SP24-SO-Movie-Club-General-Information-Editable.webp",
+      "thumb": "/designs/SP24/thumb/51-SP24-SO-Movie-Club-General-Information-Editable.webp"
+    },
+    {
+      "rank": 54,
+      "title": "CABC - Cultural Game Event",
+      "quarter": "Spring 2026",
+      "quarterCode": "SP26",
+      "score": 7,
+      "note": "Cultural Game Event; green bingo-card layout",
+      "image": "/designs/SP26/54-SP26-CABC-Cultural-Game-Event-Editable-CABC-Cultural-Game-Event.webp",
+      "thumb": "/designs/SP26/thumb/54-SP26-CABC-Cultural-Game-Event-Editable-CABC-Cultural-Game-Event.webp"
+    },
+    {
+      "rank": 57,
+      "title": "ASEC - ARC Recruit Student Representative Advertisment",
+      "quarter": "Winter 2024",
+      "quarterCode": "WN24",
+      "score": 7,
+      "note": "ARC Student Reps; clean corporate",
+      "image": "/designs/WN24/57-WN24-ASEC-ARC-Recruit-Student-Representative-Advertisment-Editable.webp",
+      "thumb": "/designs/WN24/thumb/57-WN24-ASEC-ARC-Recruit-Student-Representative-Advertisment-Editable.webp"
+    },
+    {
+      "rank": 58,
+      "title": "ASEC - TIMC Recruit Student Representative Advertisment",
+      "quarter": "Winter 2024",
+      "quarterCode": "WN24",
+      "score": 7,
+      "note": "TIMC Student Reps; clean",
+      "image": "/designs/WN24/58-WN24-ASEC-TIMC-Recruit-Student-Representative-Advertisment-Editable.webp",
+      "thumb": "/designs/WN24/thumb/58-WN24-ASEC-TIMC-Recruit-Student-Representative-Advertisment-Editable.webp"
+    },
+    {
+      "rank": 61,
+      "title": "Athletics - Triton Game Day - Halloween Edition",
+      "quarter": "Winter 2025",
+      "quarterCode": "WN25",
+      "score": 7,
+      "note": "Triton Basketball; winter scene illustration",
+      "image": "/designs/WN25/61-WN25-Athletics-Triton-Game-Day-Halloween-Edition-Editable-Atheltics-Triton-Baske.webp",
+      "thumb": "/designs/WN25/thumb/61-WN25-Athletics-Triton-Game-Day-Halloween-Edition-Editable-Atheltics-Triton-Baske.webp"
+    },
+    {
+      "rank": 63,
+      "title": "Food Pantry - Winter Care Packages",
+      "quarter": "Winter 2025",
+      "quarterCode": "WN25",
+      "score": 7,
+      "note": "Care Packages distribution; teal, organized",
+      "image": "/designs/WN25/63-WN25-Food-Pantry-Winter-Care-Packages-Flyer.webp",
+      "thumb": "/designs/WN25/thumb/63-WN25-Food-Pantry-Winter-Care-Packages-Flyer.webp"
+    },
+    {
+      "rank": 66,
+      "title": "SAB - Volunteer is You!",
+      "quarter": "Winter 2025",
+      "quarterCode": "WN25",
+      "score": 7,
+      "note": "'Volunteer is You'; hands, warm",
+      "image": "/designs/WN25/66-WN25-SAB-Volunteer-is-You-PRINT-SAB-Volunteer-is-You-_-Flyer.webp",
+      "thumb": "/designs/WN25/thumb/66-WN25-SAB-Volunteer-is-You-PRINT-SAB-Volunteer-is-You-_-Flyer.webp"
+    },
+    {
+      "rank": 67,
+      "title": "SO - Budget & Finance Workshop",
+      "quarter": "Winter 2025",
+      "quarterCode": "WN25",
+      "score": 7,
+      "note": "Budget & Finance workshop; clean",
+      "image": "/designs/WN25/67-WN25-SO-Budget-Finance-Workshop-Low-Res-SO-Budget-Finance-Workshop-WN25-_Flyer.webp",
+      "thumb": "/designs/WN25/thumb/67-WN25-SO-Budget-Finance-Workshop-Low-Res-SO-Budget-Finance-Workshop-WN25-_Flyer.webp"
+    },
+    {
+      "rank": 69,
+      "title": "SO - Edmonds Smash Club (ESC) General Advertising",
+      "quarter": "Winter 2025",
+      "quarterCode": "WN25",
+      "score": 7,
+      "note": "Smash Club variant",
+      "image": "/designs/WN25/69-WN25-SO-Edmonds-Smash-Club-ESC-General-Advertising-WN25-Flyer.webp",
+      "thumb": "/designs/WN25/thumb/69-WN25-SO-Edmonds-Smash-Club-ESC-General-Advertising-WN25-Flyer.webp"
+    },
+    {
+      "rank": 74,
+      "title": "TGR -  Smah Brothers Ultimate tournament",
+      "quarter": "Fall 2024",
+      "quarterCode": "FA24",
+      "score": 6.5,
+      "note": "Smash Bros tournament; bold but dense at base",
+      "image": "/designs/FA24/74-FA24-TGR-Smah-Brothers-Ultimate-tournament-Flyer.webp",
+      "thumb": "/designs/FA24/thumb/74-FA24-TGR-Smah-Brothers-Ultimate-tournament-Flyer.webp"
+    },
+    {
+      "rank": 76,
+      "title": "TGR - Ping Pong Tournament",
+      "quarter": "Spring 2024",
+      "quarterCode": "SP24",
+      "score": 6.5,
+      "note": "Ping Pong tournament; a bit busy",
+      "image": "/designs/SP24/76-SP24-TGR-Ping-Pong-Tournament-Editable.webp",
+      "thumb": "/designs/SP24/thumb/76-SP24-TGR-Ping-Pong-Tournament-Editable.webp"
+    },
+    {
+      "rank": 77,
+      "title": "CSCDI - PRIDE MOVIE",
+      "quarter": "Spring 2025",
+      "quarterCode": "SP25",
+      "score": 6.5,
+      "note": "Pride movie; photo-led",
+      "image": "/designs/SP25/77-SP25-CSCDI-PRIDE-MOVIE-SP25-CSCDI-PRIDE-MOVIE-CSCDI-PRIDE-MOVIE.webp",
+      "thumb": "/designs/SP25/thumb/77-SP25-CSCDI-PRIDE-MOVIE-SP25-CSCDI-PRIDE-MOVIE-CSCDI-PRIDE-MOVIE.webp"
+    },
+    {
+      "rank": 78,
+      "title": "SO - Spring Bash",
+      "quarter": "Spring 2025",
+      "quarterCode": "SP25",
+      "score": 6.5,
+      "note": "Spring Bash; simple, big QR",
+      "image": "/designs/SP25/78-SP25-SO-Spring-Bash-SP25-SO-Spring-Bash-LR-Event-Participation-QR-Code.webp",
+      "thumb": "/designs/SP25/thumb/78-SP25-SO-Spring-Bash-SP25-SO-Spring-Bash-LR-Event-Participation-QR-Code.webp"
+    },
+    {
+      "rank": 80,
+      "title": "CSCDI - 6th Year Anniversary",
+      "quarter": "Winter 2024",
+      "quarterCode": "WN24",
+      "score": 6.5,
+      "note": "6th Anniversary; photo-led",
+      "image": "/designs/WN24/80-WN24-CSCDI-6th-Year-Anniversary-Editable.webp",
+      "thumb": "/designs/WN24/thumb/80-WN24-CSCDI-6th-Year-Anniversary-Editable.webp"
+    },
+    {
+      "rank": 81,
+      "title": "CSCDI - Meditation Room",
+      "quarter": "Winter 2024",
+      "quarterCode": "WN24",
+      "score": 6.5,
+      "note": "Meditation Room; photo-led, calm",
+      "image": "/designs/WN24/81-WN24-CSCDI-Meditation-Room-Editable.webp",
+      "thumb": "/designs/WN24/thumb/81-WN24-CSCDI-Meditation-Room-Editable.webp"
+    },
+    {
+      "rank": 82,
+      "title": "Green Team - Movie Showing Blame Game",
+      "quarter": "Winter 2024",
+      "quarterCode": "WN24",
+      "score": 6.5,
+      "note": "'Blame Game' e-waste; dark, TV motif",
+      "image": "/designs/WN24/82-WN24-Green-Team-Movie-Showing-Blame-Game-Editable.webp",
+      "thumb": "/designs/WN24/thumb/82-WN24-Green-Team-Movie-Showing-Blame-Game-Editable.webp"
+    },
+    {
+      "rank": 84,
+      "title": "SO - Programming Workshop",
+      "quarter": "Winter 2025",
+      "quarterCode": "WN25",
+      "score": 6.5,
+      "note": "Programming Workshop; minimal",
+      "image": "/designs/WN25/84-WN25-SO-Programming-Workshop-Low-Res-SO-Programming-Workshop-WN25-_Flyer.webp",
+      "thumb": "/designs/WN25/thumb/84-WN25-SO-Programming-Workshop-Low-Res-SO-Programming-Workshop-WN25-_Flyer.webp"
+    },
+    {
+      "rank": 86,
+      "title": "Triton Field Day - Version 1 (for SP26)",
+      "quarter": "Winter 2026",
+      "quarterCode": "WN26",
+      "score": 6.5,
+      "note": "Triton Field Day; polaroid photo collage",
+      "image": "/designs/WN26/86-WN26-Triton-Field-Day-Version-1-for-SP26-Editable-SP26-Triton-Field-Day-Version-.webp",
+      "thumb": "/designs/WN26/thumb/86-WN26-Triton-Field-Day-Version-1-for-SP26-Editable-SP26-Triton-Field-Day-Version-.webp"
+    },
+    {
+      "rank": 87,
+      "title": "SAB - Breaking the Silence National Suicide Awareness Month",
+      "quarter": "Fall 2024",
+      "quarterCode": "FA24",
+      "score": 6,
+      "note": "Suicide-awareness; informative but busy/muted chart",
+      "image": "/designs/FA24/87-FA24-SAB-Breaking-the-Silence-National-Suicide-Awareness-Month-Flyer.webp",
+      "thumb": "/designs/FA24/thumb/87-FA24-SAB-Breaking-the-Silence-National-Suicide-Awareness-Month-Flyer.webp"
+    },
+    {
+      "rank": 88,
+      "title": "Service-Learning - Website Advertisement",
+      "quarter": "Fall 2025",
+      "quarterCode": "FA25",
+      "score": 6,
+      "note": "'Stand Out'; text-heavy columns",
+      "image": "/designs/FA25/88-FA25-Service-Learning-Website-Advertisement-FA25-Service-Learning-Website-Advert.webp",
+      "thumb": "/designs/FA25/thumb/88-FA25-Service-Learning-Website-Advertisement-FA25-Service-Learning-Website-Advert.webp"
+    },
+    {
+      "rank": 91,
+      "title": "ASEC - Feedback Form",
+      "quarter": "Spring 2026",
+      "quarterCode": "SP26",
+      "score": 6,
+      "note": "Feedback form; functional",
+      "image": "/designs/SP26/91-1.webp",
+      "thumb": "/designs/SP26/thumb/91-1.webp"
+    }
+  ]
+}

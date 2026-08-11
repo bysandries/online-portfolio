@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
       // Legacy sandries.com (YOOtheme) URLs, for the domain cutover.
       { source: "/company", destination: "/about", permanent: true },
       { source: "/resume", destination: "/experience", permanent: true },
+      { source: "/designs-gallery", destination: "/designs", permanent: true },
     ];
   },
 };

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import config from "@/config/projects.json";
-import type { PortfolioConfig } from "@/config/types";
+import flyersConfig from "@/config/flyers.json";
+import type { FlyersConfig, PortfolioConfig } from "@/config/types";
 
 /**
  * Landing page: hero + featured work + section links. The full project
@@ -9,6 +10,9 @@ import type { PortfolioConfig } from "@/config/types";
 export default function Home() {
   const { profile, projects } = config as PortfolioConfig;
   const featured = projects.filter((p) => p.category === "featured");
+  const featuredFlyers = (flyersConfig as FlyersConfig).flyers.filter(
+    (f) => f.featured,
+  );
 
   return (
     <div className="h-full overflow-y-auto bg-canvas">
@@ -114,8 +118,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section links */}
+      {/* Featured designs */}
       <section className="mx-auto max-w-5xl px-6 py-14">
+        <div className="flex flex-wrap items-baseline justify-between gap-2">
+          <h2 className="text-[11px] font-semibold uppercase tracking-widest text-muted">
+            Featured Designs
+          </h2>
+          <Link
+            href="/designs"
+            className="text-xs text-accent-soft transition-colors hover:text-ink"
+          >
+            Open the board →
+          </Link>
+        </div>
+        <Link
+          href="/designs"
+          className="group mt-6 flex flex-wrap items-start justify-center gap-6 sm:justify-between"
+        >
+          {featuredFlyers.map((f, i) => (
+            <span
+              key={f.rank}
+              className="relative w-32 rounded-[2px] bg-white p-2 pb-3 shadow-[0_6px_14px_rgba(0,0,0,.32),0_2px_4px_rgba(0,0,0,.2)] transition-transform group-hover:scale-[1.03] sm:w-40"
+              style={{ transform: `rotate(${[-4, 3, -2, 5][i % 4]}deg)` }}
+            >
+              <span className="cork-pin absolute -top-2 left-1/2 z-[2] h-4 w-4 -translate-x-1/2 rounded-full" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={f.thumb}
+                alt={f.title}
+                loading="lazy"
+                className="block h-auto w-full bg-neutral-200"
+              />
+            </span>
+          ))}
+        </Link>
+        <p className="mt-6 text-xs leading-relaxed text-muted">
+          Flyer design for Edmonds College events and student clubs — Adobe
+          Certified Professional work. Drag them around on the full board.
+        </p>
+      </section>
+
+      {/* Section links */}
+      <section className="border-t border-edge">
+        <div className="mx-auto max-w-5xl px-6 py-14">
         <h2 className="text-[11px] font-semibold uppercase tracking-widest text-muted">
           More
         </h2>
@@ -148,6 +193,7 @@ export default function Home() {
               <p className="mt-2 text-xs leading-relaxed text-muted">{s.blurb}</p>
             </Link>
           ))}
+        </div>
         </div>
       </section>
 

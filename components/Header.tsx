@@ -24,7 +24,9 @@ export default function Header() {
         Luis <span className="text-accent">Bedoya Sandries</span>
       </Link>
       <nav
-        className="flex w-full items-center gap-1 overflow-x-auto whitespace-nowrap sm:w-auto sm:justify-end"
+        // Items flow from the start inside the scroll container — right-aligned
+        // overflow would clip the leading links behind an unreachable scroll edge.
+        className="flex w-full items-center gap-1 overflow-x-auto whitespace-nowrap sm:w-auto"
         aria-label="Site"
       >
         {NAV.map(({ href, label }) => {

@@ -2,17 +2,26 @@ import Link from "next/link";
 import config from "@/config/projects.json";
 import flyersConfig from "@/config/flyers.json";
 import type { FlyersConfig, PortfolioConfig } from "@/config/types";
+import { getAllPosts } from "@/lib/posts";
+
+const dateFmt = new Intl.DateTimeFormat("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+  timeZone: "UTC",
+});
 
 /**
  * Landing page: hero + featured work + section links. The full project
  * explorer (master-detail with live demos) lives at /projects.
  */
-export default function Home() {
+export default async function Home() {
   const { profile, projects } = config as PortfolioConfig;
   const featured = projects.filter((p) => p.category === "featured");
   const featuredFlyers = (flyersConfig as FlyersConfig).flyers.filter(
     (f) => f.featured,
   );
+  const latestPosts = (await getAllPosts()).slice(0, 3);
 
   return (
     <div className="h-full overflow-y-auto bg-canvas">
@@ -158,8 +167,44 @@ export default function Home() {
         </p>
       </section>
 
+      {/* Latest writing */}
+      <section className="border-t border-edge bg-panel/40">
+        <div className="mx-auto max-w-5xl px-6 py-14">
+          <div className="flex flex-wrap items-baseline justify-between gap-2">
+            <h2 className="text-[11px] font-semibold uppercase tracking-widest text-muted">
+              Latest Writing
+            </h2>
+            <Link
+              href="/blog"
+              className="text-xs text-accent-soft transition-colors hover:text-ink"
+            >
+              All posts →
+            </Link>
+          </div>
+          <div className="mt-6 grid gap-4 sm:grid-cols-3">
+            {latestPosts.map((p) => (
+              <Link
+                key={p.slug}
+                href={`/blog/${p.slug}`}
+                className="group flex flex-col rounded-xl border border-edge bg-panel p-5 transition-colors hover:border-accent"
+              >
+                <p className="font-mono text-[11px] text-accent-soft">
+                  {dateFmt.format(new Date(p.publishedDate))}
+                </p>
+                <h3 className="mt-2 text-sm font-semibold leading-snug group-hover:text-accent">
+                  {p.title}
+                </h3>
+                <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-muted">
+                  {p.summary}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Section links */}
-      <section className="border-t border-edge">
+      <section className="">
         <div className="mx-auto max-w-5xl px-6 py-14">
         <h2 className="text-[11px] font-semibold uppercase tracking-widest text-muted">
           More

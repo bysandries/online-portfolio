@@ -45,6 +45,9 @@ export default function FlyerCard({
 
   useEffect(() => {
     const saved = readSaved()[String(flyer.rank)];
+    // localStorage is only readable post-mount; applying it in an effect keeps
+    // the server and first client render identical (no hydration mismatch).
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (saved) setOffset(saved);
   }, [flyer.rank]);
 

@@ -15,6 +15,21 @@ const nextConfig: NextConfig = {
       { source: "/company", destination: "/about", permanent: true },
       { source: "/resume", destination: "/experience", permanent: true },
       { source: "/designs-gallery", destination: "/designs", permanent: true },
+      {
+        source: "/blog/10-how-was-my-process-to-get-a-job-on-campus-with-a-visa-f1",
+        destination: "/blog/on-campus-job-international-student",
+        permanent: true,
+      },
+      {
+        source: "/blog/18-automate-your-excel-tasks-and-save-time-with-knimes",
+        destination: "/blog/automate-excel-knime",
+        permanent: true,
+      },
+      {
+        source: "/blog/11-mastering-p2p-process-flow-the-key-to-uninterrupted-cash-flow-in-companies",
+        destination: "/blog/p2p-process-flow",
+        permanent: true,
+      },
     ];
   },
 };

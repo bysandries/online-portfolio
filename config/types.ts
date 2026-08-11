@@ -32,6 +32,8 @@ export interface Category {
 export interface Profile {
   name: string;
   headline: string;
+  /** Short brand motif shown on the landing hero, e.g. "Design · Software · Innovation". */
+  tagline?: string;
   location: string;
   bio: string;
   credentials: string[];
@@ -76,7 +78,7 @@ export interface School {
 export interface CourseLink {
   course: string;
   description: string;
-  /** Ids into projects.json — rendered as deep links to /?project=<id> */
+  /** Ids into projects.json — rendered as deep links to /projects?project=<id> */
   projectIds: string[];
 }
 

@@ -68,7 +68,7 @@ export default function EducationPage() {
                 {c.projectIds.map((id) => (
                   <li key={id}>
                     <Link
-                      href={`/?project=${id}`}
+                      href={`/projects?project=${id}`}
                       className="inline-block rounded-md border border-edge bg-panel px-3 py-1.5 text-xs text-accent-soft transition-colors hover:border-accent hover:text-ink"
                     >
                       {titleOf(id)} →

@@ -20,11 +20,16 @@ export default function Header() {
   // chrome — the window provides it. Detected post-mount to keep SSR stable.
   const [framed, setFramed] = useState(false);
   useEffect(() => {
-    // Framing is only knowable post-mount; identical SSR + first client
-    // render, then one intentional update when embedded.
+    // Framing/mode are only knowable post-mount; identical SSR + first
+    // client render, then one intentional update. On / in desktop mode the
+    // header also bows out — the desktop overlay owns the whole viewport.
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (window.self !== window.top) setFramed(true);
-  }, []);
+    if (
+      window.self !== window.top ||
+      (pathname === "/" && !document.cookie.includes("ui-mode=info"))
+    )
+      setFramed(true);
+  }, [pathname]);
 
   // The Keystatic admin ships its own full-screen chrome.
   if (framed || pathname.startsWith("/keystatic")) return null;

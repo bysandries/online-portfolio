@@ -18,14 +18,22 @@ function rnd(seed: number) {
   return x - Math.floor(x);
 }
 
-/** A dozen flyers pinned straight onto the wallpaper, seeded scatter. */
+/**
+ * Eight flyers pinned onto the wallpaper. Each gets its own grid slot with a
+ * little seeded jitter — scattered enough to feel hand-pinned, spaced enough
+ * to never pile up. The right edge stays clear for the desktop shortcuts.
+ */
+const SLOTS: Array<[number, number]> = [
+  [5, 12], [24, 16], [43, 14], [62, 15],
+  [8, 55], [27, 58], [46, 54], [64, 58],
+];
 const WALL_FLYERS = (flyersConfig as FlyersConfig).flyers
   .filter((_, i) => i % 3 === 0)
-  .slice(0, 12)
-  .map((f) => ({
+  .slice(0, SLOTS.length)
+  .map((f, i) => ({
     flyer: f,
-    left: 4 + rnd(f.rank * 7) * 76, // % of width
-    top: 10 + rnd(f.rank * 13) * 58, // % of height
+    left: SLOTS[i][0] + (rnd(f.rank * 7) - 0.5) * 6, // % of width
+    top: SLOTS[i][1] + (rnd(f.rank * 13) - 0.5) * 8, // % of height
   }));
 
 /**
@@ -49,13 +57,20 @@ export default function DesktopShell() {
         );
       }
       const n = prev.length;
+      // Cascade from a centered origin, clamped so the window opens fully
+      // on-screen (the Window itself caps its size to the viewport).
+      const w = Math.min(app.defaultSize.w, window.innerWidth - 16);
+      const x = Math.min(
+        Math.max((window.innerWidth - w) / 2 + (n % 4) * 40 - 60, 8),
+        Math.max(window.innerWidth - w - 8, 8),
+      );
       return [
         ...prev,
         {
           key: app.id,
           app,
-          x: Math.max(12, 90 + n * 36),
-          y: 64 + (n % 5) * 32,
+          x,
+          y: 52 + (n % 4) * 32,
           z: ++zCounter.current,
           minimized: false,
           maximized: false,
@@ -83,6 +98,16 @@ export default function DesktopShell() {
           </Link>
         ))}
       </nav>
+
+      {/* Soft vignette settles the cork texture behind the content */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse at 50% 35%, transparent 55%, rgba(45,28,10,0.28) 100%)",
+        }}
+      />
 
       <MenuBar />
 

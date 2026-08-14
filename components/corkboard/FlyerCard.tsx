@@ -51,9 +51,11 @@ export default function FlyerCard({
     if (saved) setOffset(saved);
   }, [flyer.rank]);
 
-  const jx = (rnd(flyer.rank) - 0.5) * 20;
-  const jy = (rnd(flyer.rank + 1) - 0.5) * 20;
-  const rot = rnd(flyer.rank + 2) * 12 - 6;
+  // 2-decimal precision so server and client stringify the transform
+  // identically (full-precision floats hydrate-mismatch).
+  const jx = Math.round((rnd(flyer.rank) - 0.5) * 2000) / 100;
+  const jy = Math.round((rnd(flyer.rank + 1) - 0.5) * 2000) / 100;
+  const rot = Math.round((rnd(flyer.rank + 2) * 12 - 6) * 100) / 100;
 
   const onPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
     e.currentTarget.setPointerCapture(e.pointerId);

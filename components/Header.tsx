@@ -1,7 +1,9 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ModeToggle from "@/components/ModeToggle";
 
 const NAV = [
   { href: "/projects", label: "Projects" },
@@ -14,15 +16,27 @@ const NAV = [
 
 export default function Header() {
   const pathname = usePathname();
+  // Pages opened inside a desktop window (same-origin iframe) drop their own
+  // chrome — the window provides it. Detected post-mount to keep SSR stable.
+  const [framed, setFramed] = useState(false);
+  useEffect(() => {
+    // Framing is only knowable post-mount; identical SSR + first client
+    // render, then one intentional update when embedded.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (window.self !== window.top) setFramed(true);
+  }, []);
 
   // The Keystatic admin ships its own full-screen chrome.
-  if (pathname.startsWith("/keystatic")) return null;
+  if (framed || pathname.startsWith("/keystatic")) return null;
 
   return (
     <header className="flex h-12 shrink-0 items-center justify-between gap-2 border-b border-edge bg-panel px-4">
-      <Link href="/" className="hidden shrink-0 text-sm font-bold tracking-tight sm:block">
-        Luis <span className="text-accent">Bedoya Sandries</span>
-      </Link>
+      <div className="flex shrink-0 items-center gap-3">
+        <ModeToggle mode="info" />
+        <Link href="/" className="hidden shrink-0 text-sm font-bold tracking-tight sm:block">
+          Luis <span className="text-accent">Bedoya Sandries</span>
+        </Link>
+      </div>
       <nav
         // Items flow from the start inside the scroll container — right-aligned
         // overflow would clip the leading links behind an unreachable scroll edge.

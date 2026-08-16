@@ -25,6 +25,6 @@ export default async function Image({
       : "BLOG",
     title: (post?.title ?? "Blog").toUpperCase(),
     subtitle: "BY LUIS BEDOYA SANDRIES",
-    titleSize: 46,
+    titleSize: 34,
   });
 }

@@ -10,6 +10,5 @@ export default function Image() {
     eyebrow: "DESIGN · SOFTWARE · INNOVATION",
     title: "LUIS BEDOYA SANDRIES",
     subtitle: "FULL-STACK & CLOUD DEVELOPER · INTERACTIVE PORTFOLIO",
-    titleSize: 64,
   });
 }

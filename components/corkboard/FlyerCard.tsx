@@ -3,7 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import type { FlyerItem } from "@/config/types";
 
-const STORAGE_KEY = "corkboard-positions-v1";
+// v2: bumped when the starter layout changed to the exhibition grid, so old
+// saved drag offsets don't scramble the new default arrangement.
+const STORAGE_KEY = "corkboard-positions-v2";
 /** Pointer travel below this many px counts as a tap (opens the lightbox). */
 const TAP_THRESHOLD = 6;
 /** Presses longer than this are a hold (pick up), not a tap (open). */
@@ -34,6 +36,7 @@ export default function FlyerCard({
   onOpen,
   nextZ,
   widthClass = "w-28 sm:w-36 md:w-40",
+  tidy = false,
   initialZ,
   isFront,
   onFront,
@@ -44,6 +47,8 @@ export default function FlyerCard({
   nextZ: () => number;
   /** Card width utilities — the desktop wall uses smaller cards than the board. */
   widthClass?: string;
+  /** Straight exhibition placement: no seeded jitter or rotation. */
+  tidy?: boolean;
   /** Starting stack position — the desktop wall layers the best designs on top. */
   initialZ?: number;
   /** When provided, a tap on a buried card only lifts it to the front; the
@@ -69,9 +74,9 @@ export default function FlyerCard({
 
   // 2-decimal precision so server and client stringify the transform
   // identically (full-precision floats hydrate-mismatch).
-  const jx = Math.round((rnd(flyer.rank) - 0.5) * 2000) / 100;
-  const jy = Math.round((rnd(flyer.rank + 1) - 0.5) * 2000) / 100;
-  const rot = Math.round((rnd(flyer.rank + 2) * 12 - 6) * 100) / 100;
+  const jx = tidy ? 0 : Math.round((rnd(flyer.rank) - 0.5) * 2000) / 100;
+  const jy = tidy ? 0 : Math.round((rnd(flyer.rank + 1) - 0.5) * 2000) / 100;
+  const rot = tidy ? 0 : Math.round((rnd(flyer.rank + 2) * 12 - 6) * 100) / 100;
 
   const onPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
     e.currentTarget.setPointerCapture(e.pointerId);

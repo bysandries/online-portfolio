@@ -12,33 +12,24 @@ import Lightbox from "@/components/corkboard/Lightbox";
 import flyersConfig from "@/config/flyers.json";
 import type { FlyerItem, FlyersConfig } from "@/config/types";
 
-/** Deterministic pseudo-random in [0,1) — same recipe as the cork board. */
-function rnd(seed: number) {
-  const x = Math.sin(seed) * 10000;
-  return x - Math.floor(x);
-}
-
 /**
  * Every flyer pinned onto the wallpaper — the desktop IS the designs gallery.
  * Every card is the same FlyerCard with the same logic; only its spawn slot
- * and pin order differ. The grid slot comes from rank (best = top-left) and
- * cards are pinned worst-first, so the last ones added — the best — sit at
- * the front of the pile purely by DOM order, no per-card z overrides.
+ * and pin order differ. The starter layout is a tidy exhibition grid: straight
+ * cards in even rows, best rank at the top-left, nothing buried — every one of
+ * the 40 designs is visible. Cards are pinned worst-first so any that later
+ * get dragged into a pile stack best-on-top purely by DOM order.
  */
 const WALL_COLS = 8;
+// Slot by list position, NOT by rank — ranks are the sparse original curation
+// numbers (1…91), so rank-derived rows would push half the designs off-screen.
+// The config is already sorted best-first, so position order = quality order.
 const WALL_FLYERS = (flyersConfig as FlyersConfig).flyers
-  .map((f) => {
-    const slot = f.rank - 1;
-    const col = slot % WALL_COLS;
-    const row = Math.floor(slot / WALL_COLS);
-    // 2-decimal precision, matching FlyerCard: full-precision floats stringify
-    // differently between server and client render and trip hydration.
-    return {
-      flyer: f,
-      left: Math.round((3 + col * 10.4 + (rnd(f.rank * 7) - 0.5) * 5) * 100) / 100, // % of width
-      top: Math.round((6 + row * 14.5 + (rnd(f.rank * 13) - 0.5) * 6) * 100) / 100, // % of height
-    };
-  })
+  .map((f, i) => ({
+    flyer: f,
+    left: 1.5 + (i % WALL_COLS) * 9.7, // % of width — right edge stays clear for shortcuts
+    top: 3 + Math.floor(i / WALL_COLS) * 18.8, // % of height
+  }))
   .sort((a, b) => b.flyer.rank - a.flyer.rank);
 /** Interacted cards get z-indexes above the whole unclicked pile. */
 const WALL_BASE_Z = WALL_FLYERS.length + 1;
@@ -137,6 +128,7 @@ export default function DesktopShell() {
               flyer={flyer}
               onOpen={setOpenFlyer}
               nextZ={() => ++flyerZ.current}
+              tidy
               isFront={frontRank === flyer.rank}
               onFront={() => setFrontRank(flyer.rank)}
             />

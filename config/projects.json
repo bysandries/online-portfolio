@@ -4,7 +4,7 @@
     "headline": "Bilingual Full-Stack & Cloud Developer",
     "tagline": "Design · Software · Innovation",
     "location": "Seattle, WA",
-    "bio": "Student at Edmonds College finishing two AAS-T degrees — Computer Information Systems and Web Application & Cloud Development (Dec 2026). I build full-stack tools that turn messy public data into something people can actually use.",
+    "bio": "Student at Edmonds College finishing four associate degrees — AAS-T & ATA in Computer Information Systems and Web Application & Cloud Development (Dec 2026). I build full-stack tools that turn messy public data into something people can actually use.",
     "credentials": [
       "AWS Academy Graduate — Cloud Developing",
       "Adobe Certified Professional",
@@ -19,10 +19,22 @@
     }
   },
   "categories": [
-    { "id": "featured", "label": "Featured" },
-    { "id": "tools", "label": "Tools & Apps" },
-    { "id": "coursework", "label": "College Coursework" },
-    { "id": "frontend", "label": "Front-End Fundamentals" }
+    {
+      "id": "featured",
+      "label": "Featured"
+    },
+    {
+      "id": "tools",
+      "label": "Tools & Apps"
+    },
+    {
+      "id": "coursework",
+      "label": "College Coursework"
+    },
+    {
+      "id": "frontend",
+      "label": "Front-End Fundamentals"
+    }
   ],
   "projects": [
     {
@@ -30,7 +42,14 @@
       "title": "Washington Affordable Housing Search",
       "tagline": "Statewide search engine for affordable housing",
       "description": "A full-stack, special-purpose search engine that makes Washington's scattered affordable-housing landscape actually searchable. It crawls and indexes 2,800+ properties (Seattle Office of Housing, WSHFC/LIHTC, AppFolio portals) the way a web search engine does — respecting robots.txt, rate-limiting itself, touching only public pages — and maps live unit availability, pricing, and MFTE/MHA income qualification on an interactive map.",
-      "tech": ["Python", "Playwright", "SQLite", "Next.js", "Leaflet", "Vercel"],
+      "tech": [
+        "Python",
+        "Playwright",
+        "SQLite",
+        "Next.js",
+        "Leaflet",
+        "Vercel"
+      ],
       "category": "featured",
       "demoUrl": "https://washington-affordable-housing-search.vercel.app",
       "repoUrl": "https://github.com/bysandries/Washington-Affordable-Housing-Search-Engine",
@@ -41,7 +60,13 @@
       "title": "Universal CS143 Notebook",
       "tagline": "In-browser Java IDE — compiles client-side via WASM",
       "description": "Browser-based Java IDE that compiles and runs Java entirely client-side (CheerpJ + WASM) and turns lab PDFs into interactive, Jupyter-style notebooks — with syntax highlighting, the Eclipse Java Compiler, and PDF export. No backend, no install: the whole toolchain runs in the tab.",
-      "tech": ["TypeScript", "Next.js", "CheerpJ", "Monaco", "WASM"],
+      "tech": [
+        "TypeScript",
+        "Next.js",
+        "CheerpJ",
+        "Monaco",
+        "WASM"
+      ],
       "category": "featured",
       "demoUrl": "https://v0-universal-cs143-notebook.vercel.app",
       "repoUrl": "https://github.com/bysandries/v0-universal-cs143-notebook",
@@ -53,7 +78,12 @@
       "title": "Java Data-Structure Visualizer",
       "tagline": "Steps through Java while rendering trees, graphs & heaps",
       "description": "Runs Java in-browser with CheerpJ, stepping through execution while rendering trees, graphs, heaps and hash tables in real time — built for CS143 Data Structures. Watch a BST rebalance or a hash table resize as each line of code executes.",
-      "tech": ["TypeScript", "Next.js", "CheerpJ", "WASM"],
+      "tech": [
+        "TypeScript",
+        "Next.js",
+        "CheerpJ",
+        "WASM"
+      ],
       "category": "featured",
       "demoUrl": "https://java-visualizer-mu.vercel.app",
       "repoUrl": null,
@@ -65,7 +95,11 @@
       "title": "CodeStepByStep Drawing Panel",
       "tagline": "Canvas scratchpad for Java Graphics exercises",
       "description": "Interactive drawing panel for CodeStepByStep Java Graphics exercises: versatile shape tools, smart object editing (move, resize, snap, clone), a scribble-to-erase gesture, full undo/redo state management, object locking, and one-click PNG export.",
-      "tech": ["TypeScript", "Next.js", "Canvas API"],
+      "tech": [
+        "TypeScript",
+        "Next.js",
+        "Canvas API"
+      ],
       "category": "tools",
       "demoUrl": "https://v0-ccodestepbystep-drawing-panel.vercel.app",
       "repoUrl": null,
@@ -76,7 +110,11 @@
       "title": "MEXT English Review",
       "tagline": "Exam-prep dashboard with score analytics",
       "description": "MEXT undergraduate English exam review — an interactive dashboard with section-by-section score breakdowns, grammar error analysis and a study roadmap, built with Astro and Tailwind.",
-      "tech": ["Astro", "Tailwind CSS", "TypeScript"],
+      "tech": [
+        "Astro",
+        "Tailwind CSS",
+        "TypeScript"
+      ],
       "category": "tools",
       "demoUrl": "https://bysandries.github.io/mext-english/",
       "repoUrl": "https://github.com/bysandries/mext-english",
@@ -87,11 +125,17 @@
       "title": "mac-scrcpy-env",
       "tagline": "Android camera → macOS virtual webcam over ADB",
       "description": "Streams an Android phone's camera feed to macOS as a virtual webcam over ADB and scrcpy — usable in Zoom, Teams, OBS, or any app. A reproducible shell environment driven by a Makefile: one command bootstraps dependencies, wires the device, and starts the stream.",
-      "tech": ["Shell", "Makefile", "ADB", "scrcpy"],
+      "tech": [
+        "Shell",
+        "Makefile",
+        "ADB",
+        "scrcpy"
+      ],
       "category": "tools",
       "demoUrl": null,
       "repoUrl": "https://github.com/bysandries/mac-scrcpy-env",
-      "embed": "none"
+      "embed": "none",
+      "hidden": true
     },
     {
       "id": "cis251-sql-final",
@@ -104,11 +148,16 @@
         "Joined three-plus tables with aliased projections and WHERE filtering to answer business questions",
         "Inserted new records across four related tables, then proved correctness with LEFT JOIN verification queries"
       ],
-      "tech": ["MySQL", "SQL", "MySQL Workbench"],
+      "tech": [
+        "MySQL",
+        "SQL",
+        "MySQL Workbench"
+      ],
       "category": "coursework",
       "demoUrl": null,
       "repoUrl": null,
-      "embed": "none"
+      "embed": "none",
+      "hidden": true
     },
     {
       "id": "cis250-database",
@@ -120,40 +169,57 @@
         "Normalized the model and expressed it as a validated schema-v2.sql",
         "Practiced the same systems-analysis workflow used in CIS 233/234 coursework"
       ],
-      "tech": ["SQL", "ER Modeling", "Normalization"],
+      "tech": [
+        "SQL",
+        "ER Modeling",
+        "Normalization"
+      ],
       "category": "coursework",
       "demoUrl": null,
       "repoUrl": null,
-      "embed": "none"
+      "embed": "none",
+      "hidden": true
     },
     {
       "id": "linkedlist-deque",
       "title": "CS 143 — LinkedList Deque",
       "tagline": "Double-ended queue on a doubly-linked list, in Java",
       "description": "Project 2 for CS 143 (Computer Science III, Java): a double-ended queue implemented on a doubly-linked list — constant-time operations at both ends, iterator support, and edge-case handling for empty and single-node states. Flip to the Code tab to read the implementation.",
-      "tech": ["Java", "Data Structures"],
+      "tech": [
+        "Java",
+        "Data Structures"
+      ],
       "category": "coursework",
       "demoUrl": null,
       "repoUrl": "https://github.com/bysandries/project-2_linkedlistdeque",
-      "embed": "none"
+      "embed": "none",
+      "hidden": true
     },
     {
       "id": "cs143-practice",
       "title": "CS 143 — Midterm Practice",
       "tagline": "Data-structures drills: stacks, queues, recursion",
       "description": "Practice problems for the CS 143 Data Structures midterm at Edmonds College (Prof. Frank Shang) — working through stacks, queues, linked lists and recursion in Java. Flip to the Code tab to browse the solutions.",
-      "tech": ["Java", "Data Structures"],
+      "tech": [
+        "Java",
+        "Data Structures"
+      ],
       "category": "coursework",
       "demoUrl": null,
       "repoUrl": "https://github.com/bysandries/cs-143-midterm-practice",
-      "embed": "none"
+      "embed": "none",
+      "hidden": true
     },
     {
       "id": "batabit",
       "title": "BataBit — Responsive Crypto Landing",
       "tagline": "Mobile-first responsive design, no frameworks",
       "description": "A responsive cryptocurrency-exchange landing page hand-coded with HTML and CSS — mobile-first layout, fluid tables, and BEM-style structure, with zero frameworks.",
-      "tech": ["HTML5", "CSS3", "Responsive Design"],
+      "tech": [
+        "HTML5",
+        "CSS3",
+        "Responsive Design"
+      ],
       "category": "frontend",
       "demoUrl": "https://bysandries.github.io/platzi-responsive-design/",
       "repoUrl": "https://github.com/bysandries/platzi-responsive-design",
@@ -164,7 +230,10 @@
       "title": "Wikipedia Clone",
       "tagline": "Responsive rebuild of the multilingual portal",
       "description": "Responsive clone of Wikipedia's multilingual portal built with pure HTML and CSS — precise typographic hierarchy and layout matching, no frameworks.",
-      "tech": ["HTML5", "CSS3"],
+      "tech": [
+        "HTML5",
+        "CSS3"
+      ],
       "category": "frontend",
       "demoUrl": "https://bysandries.github.io/platzi-clon-de-wikipedia/",
       "repoUrl": "https://github.com/bysandries/platzi-clon-de-wikipedia",
@@ -175,7 +244,10 @@
       "title": "Google Homepage Clone",
       "tagline": "Pixel-faithful clone in pure HTML & CSS",
       "description": "Pixel-faithful clone of the Google homepage built with pure HTML and CSS — an exercise in matching spacing, alignment, and interaction states exactly.",
-      "tech": ["HTML5", "CSS3"],
+      "tech": [
+        "HTML5",
+        "CSS3"
+      ],
       "category": "frontend",
       "demoUrl": "https://bysandries.github.io/platzi-clon-de-google/",
       "repoUrl": "https://github.com/bysandries/platzi-clon-de-google",
@@ -186,7 +258,11 @@
       "title": "GatitES Store",
       "tagline": "Multi-page e-commerce site built with Sass",
       "description": "GatitES — a multi-page cat-themed e-commerce site built with HTML, Sass and JavaScript: product grid, detail pages, and a consistent design system compiled from Sass partials.",
-      "tech": ["HTML5", "Sass", "JavaScript"],
+      "tech": [
+        "HTML5",
+        "Sass",
+        "JavaScript"
+      ],
       "category": "frontend",
       "demoUrl": "https://bysandries.github.io/gatites/",
       "repoUrl": "https://github.com/bysandries/gatites",
@@ -197,7 +273,11 @@
       "title": "Practical JavaScript Calculators",
       "tagline": "Geometry, discount & statistics calculators",
       "description": "Interactive calculators for geometry, discounts and statistics built with vanilla JavaScript DOM manipulation — event-driven inputs, live results, and no dependencies.",
-      "tech": ["JavaScript", "HTML5", "Sass"],
+      "tech": [
+        "JavaScript",
+        "HTML5",
+        "Sass"
+      ],
       "category": "frontend",
       "demoUrl": "https://bysandries.github.io/platzi-curso-practico-javascript/",
       "repoUrl": null,
@@ -208,11 +288,16 @@
       "title": "Avo Project",
       "tagline": "API-driven rendering with vanilla DOM + Webpack",
       "description": "DOM-manipulation exercise that fetches data from an API and renders product cards dynamically with vanilla JavaScript, bundled with Webpack.",
-      "tech": ["JavaScript", "Webpack", "REST API"],
+      "tech": [
+        "JavaScript",
+        "Webpack",
+        "REST API"
+      ],
       "category": "frontend",
       "demoUrl": "https://bysandries.github.io/avoproject/",
       "repoUrl": "https://github.com/bysandries/avoproject",
-      "embed": "auto"
+      "embed": "auto",
+      "hidden": true
     }
   ]
 }

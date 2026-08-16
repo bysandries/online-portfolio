@@ -7,12 +7,30 @@
     "Away from the editor: I shoot event photography (a big part of my campus design work), I tutor — math, web fundamentals, Microsoft Office, databases — because teaching something is how I know I've learned it, and I switch between Spanish and English all day, every day."
   ],
   "facts": [
-    { "label": "Home base", "value": "Seattle, WA" },
-    { "label": "From", "value": "Heredia, Costa Rica" },
-    { "label": "Languages", "value": "Spanish (native) · English (professional)" },
-    { "label": "Day job", "value": "Lead Graphic Designer, Edmonds College CSEL" },
-    { "label": "Graduating", "value": "Dec 2026 — two AAS-T degrees" },
-    { "label": "Open to", "value": "Full-stack, cloud & applied-AI roles" }
+    {
+      "label": "Home base",
+      "value": "Seattle, WA"
+    },
+    {
+      "label": "From",
+      "value": "Heredia, Costa Rica"
+    },
+    {
+      "label": "Languages",
+      "value": "Spanish (native) · English (professional)"
+    },
+    {
+      "label": "Day job",
+      "value": "Lead Graphic Designer, Edmonds College CSEL"
+    },
+    {
+      "label": "Graduating",
+      "value": "Dec 2026 — four associate degrees"
+    },
+    {
+      "label": "Open to",
+      "value": "Full-stack, cloud & applied-AI roles"
+    }
   ],
   "interests": [
     "Event photography",

@@ -11,9 +11,16 @@ export const metadata: Metadata = {
 };
 
 export default function ProjectsPage() {
+  // Hidden projects stay in the config (data, ids, write-ups intact) but are
+  // filtered out of everything the explorer renders.
+  const full = config as PortfolioConfig;
+  const visible: PortfolioConfig = {
+    ...full,
+    projects: full.projects.filter((p) => !p.hidden),
+  };
   return (
     <Suspense>
-      <Layout config={config as PortfolioConfig} />
+      <Layout config={visible} />
     </Suspense>
   );
 }

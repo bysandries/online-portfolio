@@ -22,6 +22,9 @@ export interface Project {
   embedNote?: string;
   /** Bullet points rendered on the detail card — used by coursework write-ups. */
   highlights?: string[];
+  /** Kept in the config but excluded from the /projects explorer and any
+      surface derived from the project list. */
+  hidden?: boolean;
 }
 
 export interface Category {
@@ -93,6 +96,30 @@ export interface EducationConfig {
   schools: School[];
   courseLinks: CourseLink[];
   certifications: Certification[];
+}
+
+/** One class, standardized from its syllabus + transcript (import-courses.mjs). */
+export interface CourseInfo {
+  code: string;
+  title: string;
+  credits: string;
+  /** Transcript grade on the 4.0 scale, or "S (Satisfactory)". */
+  grade: string;
+  /** e.g. "Winter 2026 (final; repeated)" */
+  term: string;
+  /** Bare quarter used for grouping, e.g. "Winter 2026" */
+  termKey: string;
+  countsToward: string;
+  description: string;
+  outcomes: string[];
+  topics: string[];
+  tools: string[];
+  /** Syllabus filename on record, or null if the college hasn't provided it. */
+  syllabus: string | null;
+}
+
+export interface CoursesConfig {
+  courses: CourseInfo[];
 }
 
 export interface FlyerItem {

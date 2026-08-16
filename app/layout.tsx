@@ -24,12 +24,17 @@ export const metadata: Metadata = {
   title: "Luis Bedoya Sandries — Full-Stack & Cloud Developer",
   description:
     "Interactive portfolio of Luis Bedoya Sandries: full-stack and cloud projects with live, in-page demos — from a statewide affordable-housing search engine to an in-browser Java IDE running on WASM.",
-  metadataBase: new URL("https://sandries.com"),
+  // The live domain — share-preview image URLs resolve against this, so it
+  // must be where the site actually serves. Flip to sandries.com at cutover.
+  metadataBase: new URL("https://luis.sandries.com"),
   openGraph: {
     title: "Luis Bedoya Sandries — Full-Stack & Cloud Developer",
     description:
       "Interactive portfolio with live, in-page project demos. Seattle, WA · Bilingual EN/ES.",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
   },
 };
 

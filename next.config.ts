@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // The OG-image routes read the Silkscreen .ttf files at request time via fs;
+  // make sure they're traced into every serverless function bundle.
+  outputFileTracingIncludes: {
+    "/**": ["./lib/og/*.ttf"],
+  },
   async redirects() {
     return [
       // The project explorer moved from / to /projects; keep old deep links

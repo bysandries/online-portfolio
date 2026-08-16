@@ -1,17 +1,19 @@
 @import "tailwindcss";
 
-/* Single committed dark-navy look — brand palette from the GitHub profile:
-   #1496CD accent · #1B2A4A navy · #B5D4E6 light blue */
+/* Pixel-art × neumorphism system — brand palette from the Sandries logo
+   sheet: deep navy ground, coin-gold + sprout-green accents, white ink. */
 :root {
-  --canvas: #0b1220;
-  --panel: #101a2e;
-  --panel-raised: #16233c;
-  --edge: #1e2c49;
-  --ink: #e6edf6;
-  --muted: #8fa3bf;
-  --accent: #1496cd;
-  --accent-hover: #1178a5;
-  --accent-soft: #b5d4e6;
+  --canvas: #081c2b;
+  --panel: #0d2536;
+  --panel-raised: #123048;
+  --edge: #1d4059;
+  --ink: #eef7fd;
+  --muted: #8fb2c6;
+  --accent: #f4c430;
+  --accent-hover: #d9a916;
+  --accent-soft: #ecd383;
+  --green: #3ecf72;
+  --green-hover: #2fb35f;
 }
 
 @theme inline {
@@ -24,14 +26,82 @@
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
   --color-accent-soft: var(--accent-soft);
+  --color-green: var(--green);
+  --color-green-hover: var(--green-hover);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-pixel: var(--font-silkscreen);
 }
 
 body {
-  background: var(--canvas);
+  background-color: var(--canvas);
+  /* Faint 8px pixel grid keeps the ground honest to the art style. */
+  background-image:
+    linear-gradient(rgba(238, 247, 253, 0.016) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(238, 247, 253, 0.016) 1px, transparent 1px);
+  background-size: 8px 8px;
   color: var(--ink);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* Neumorphic surfaces — light source top-left, navy-on-navy extrusion. */
+.neo {
+  border-radius: 14px;
+  background: linear-gradient(145deg, #0e2839, #0b2231);
+  box-shadow:
+    7px 7px 16px rgba(2, 9, 16, 0.55),
+    -5px -5px 12px rgba(94, 156, 198, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+.neo-inset {
+  border-radius: 10px;
+  background: var(--panel);
+  box-shadow:
+    inset 5px 5px 10px rgba(2, 9, 16, 0.55),
+    inset -4px -4px 9px rgba(94, 156, 198, 0.06);
+}
+
+/* Pixel border: four offset shadows draw a plus-shaped frame whose corners
+   stay open — the classic 8-bit box. Color via --px-border. */
+.pixel-border {
+  --px-border: var(--edge);
+  box-shadow:
+    3px 0 0 var(--px-border),
+    -3px 0 0 var(--px-border),
+    0 3px 0 var(--px-border),
+    0 -3px 0 var(--px-border);
+}
+
+/* XP bar: a stepped-block track with a stepped-block fill (span). */
+.px-bar {
+  height: 12px;
+  background:
+    repeating-linear-gradient(90deg, rgba(238, 247, 253, 0.07) 0 6px, rgba(238, 247, 253, 0.02) 6px 12px);
+  box-shadow: inset 2px 2px 5px rgba(2, 9, 16, 0.6);
+}
+.px-bar > span {
+  display: block;
+  height: 100%;
+  --px-fill: var(--accent);
+  background:
+    repeating-linear-gradient(90deg, var(--px-fill) 0 6px, color-mix(in srgb, var(--px-fill) 72%, #081c2b) 6px 12px);
+}
+
+/* Blinking terminal cursor for the hero name. */
+.px-cursor::after {
+  content: "_";
+  color: var(--accent);
+  animation: px-blink 1.2s steps(2, start) infinite;
+}
+@keyframes px-blink {
+  to {
+    visibility: hidden;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .px-cursor::after {
+    animation: none;
+  }
 }
 
 /* Cork-board surface for the designs gallery — warm cork texture recipe

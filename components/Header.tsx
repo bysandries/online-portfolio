@@ -35,11 +35,14 @@ export default function Header() {
   if (framed || pathname.startsWith("/keystatic")) return null;
 
   return (
-    <header className="flex h-12 shrink-0 items-center justify-between gap-2 border-b border-edge bg-panel px-4">
+    <header className="flex h-12 shrink-0 items-center justify-between gap-2 border-b border-edge bg-panel px-4 shadow-[0_6px_14px_rgba(2,9,16,.45)]">
       <div className="flex shrink-0 items-center gap-3">
         <ModeToggle mode="info" />
-        <Link href="/" className="hidden shrink-0 text-sm font-bold tracking-tight sm:block">
-          Luis <span className="text-accent">Bedoya Sandries</span>
+        <Link
+          href="/"
+          className="hidden shrink-0 font-pixel text-[11px] font-bold tracking-tight sm:block"
+        >
+          LUIS <span className="text-accent">SANDRIES</span>
         </Link>
       </div>
       <nav
@@ -57,7 +60,7 @@ export default function Header() {
               aria-current={active ? "page" : undefined}
               className={`shrink-0 rounded-md px-3 py-1.5 text-sm transition-colors ${
                 active
-                  ? "bg-panel-raised font-medium text-accent"
+                  ? "neo-inset font-medium text-accent"
                   : "text-muted hover:text-ink"
               }`}
             >

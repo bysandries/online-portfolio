@@ -6,6 +6,8 @@ import type { FlyerItem } from "@/config/types";
 const STORAGE_KEY = "corkboard-positions-v1";
 /** Pointer travel below this many px counts as a tap (opens the lightbox). */
 const TAP_THRESHOLD = 6;
+/** Presses longer than this are a hold (pick up), not a tap (open). */
+const HOLD_MS = 400;
 
 /** Deterministic pseudo-random in [0,1) — same recipe as the original board,
  *  so the initial scatter is identical between server and client render. */
@@ -31,15 +33,29 @@ export default function FlyerCard({
   flyer,
   onOpen,
   nextZ,
+  widthClass = "w-28 sm:w-36 md:w-40",
+  initialZ,
+  isFront,
+  onFront,
 }: {
   flyer: FlyerItem;
   onOpen: (flyer: FlyerItem) => void;
   /** Hands out an increasing z-index so the last-touched card stays on top. */
   nextZ: () => number;
+  /** Card width utilities — the desktop wall uses smaller cards than the board. */
+  widthClass?: string;
+  /** Starting stack position — the desktop wall layers the best designs on top. */
+  initialZ?: number;
+  /** When provided, a tap on a buried card only lifts it to the front; the
+   *  lightbox opens on tapping the card that is already front-most. */
+  isFront?: boolean;
+  onFront?: () => void;
 }) {
   const [offset, setOffset] = useState({ x: 0, y: 0 });
-  const [z, setZ] = useState<number | undefined>(undefined);
+  const [z, setZ] = useState<number | undefined>(initialZ);
   const [lifted, setLifted] = useState(false);
+  const wasFront = useRef(true);
+  const pressAt = useRef(0);
   const drag = useRef<{ startX: number; startY: number; baseX: number; baseY: number } | null>(null);
   const moved = useRef(false);
 
@@ -61,6 +77,12 @@ export default function FlyerCard({
     e.currentTarget.setPointerCapture(e.pointerId);
     drag.current = { startX: e.clientX, startY: e.clientY, baseX: offset.x, baseY: offset.y };
     moved.current = false;
+    wasFront.current = isFront ?? true;
+    pressAt.current = performance.now();
+    onFront?.();
+    // Press = pick up: the card lifts and comes to the front immediately,
+    // ready to be dragged anywhere.
+    setLifted(true);
     setZ(nextZ());
   };
 
@@ -70,7 +92,6 @@ export default function FlyerCard({
     const dy = e.clientY - drag.current.startY;
     if (Math.abs(dx) > TAP_THRESHOLD || Math.abs(dy) > TAP_THRESHOLD) {
       moved.current = true;
-      setLifted(true);
     }
     if (moved.current) {
       setOffset({ x: drag.current.baseX + dx, y: drag.current.baseY + dy });
@@ -89,7 +110,9 @@ export default function FlyerCard({
       } catch {
         /* private mode etc. — the drag still works, it just won't persist */
       }
-    } else {
+    } else if (wasFront.current && performance.now() - pressAt.current < HOLD_MS) {
+      // Only a quick tap opens the lightbox — a click-and-hold is a "pick up"
+      // gesture (bring to front / start moving), not an open.
       onOpen(flyer);
     }
   };
@@ -103,19 +126,24 @@ export default function FlyerCard({
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
       onPointerCancel={onPointerUp}
+      // A native HTML drag (of an image or an active text selection) would
+      // fire pointercancel mid-move and freeze the card — never allow one.
+      onDragStart={(e) => e.preventDefault()}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
           onOpen(flyer);
         }
       }}
-      className={`relative -m-2 w-28 shrink-0 cursor-grab touch-none select-none rounded-[2px] bg-white p-2 pb-3 transition-shadow active:cursor-grabbing sm:w-36 md:w-40 ${
+      className={`pointer-events-auto relative -m-2 shrink-0 cursor-grab touch-none select-none rounded-[2px] bg-white p-2 pb-3 transition-shadow active:cursor-grabbing ${widthClass} ${
         lifted
           ? "shadow-[0_18px_36px_rgba(0,0,0,.45),0_4px_8px_rgba(0,0,0,.3)]"
           : "shadow-[0_6px_14px_rgba(0,0,0,.32),0_2px_4px_rgba(0,0,0,.2)]"
       }`}
       style={{
-        transform: `translate(${jx + offset.x}px, ${jy + offset.y}px) rotate(${rot}deg)`,
+        transform: `translate(${jx + offset.x}px, ${jy + offset.y}px) rotate(${rot}deg)${
+          lifted ? " scale(1.04)" : ""
+        }`,
         zIndex: z,
       }}
     >

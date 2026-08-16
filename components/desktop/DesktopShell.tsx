@@ -19,22 +19,29 @@ function rnd(seed: number) {
 }
 
 /**
- * Eight flyers pinned onto the wallpaper. Each gets its own grid slot with a
- * little seeded jitter — scattered enough to feel hand-pinned, spaced enough
- * to never pile up. The right edge stays clear for the desktop shortcuts.
+ * Every flyer pinned onto the wallpaper — the desktop IS the designs gallery.
+ * Every card is the same FlyerCard with the same logic; only its spawn slot
+ * and pin order differ. The grid slot comes from rank (best = top-left) and
+ * cards are pinned worst-first, so the last ones added — the best — sit at
+ * the front of the pile purely by DOM order, no per-card z overrides.
  */
-const SLOTS: Array<[number, number]> = [
-  [5, 12], [24, 16], [43, 14], [62, 15],
-  [8, 55], [27, 58], [46, 54], [64, 58],
-];
+const WALL_COLS = 8;
 const WALL_FLYERS = (flyersConfig as FlyersConfig).flyers
-  .filter((_, i) => i % 3 === 0)
-  .slice(0, SLOTS.length)
-  .map((f, i) => ({
-    flyer: f,
-    left: SLOTS[i][0] + (rnd(f.rank * 7) - 0.5) * 6, // % of width
-    top: SLOTS[i][1] + (rnd(f.rank * 13) - 0.5) * 8, // % of height
-  }));
+  .map((f) => {
+    const slot = f.rank - 1;
+    const col = slot % WALL_COLS;
+    const row = Math.floor(slot / WALL_COLS);
+    // 2-decimal precision, matching FlyerCard: full-precision floats stringify
+    // differently between server and client render and trip hydration.
+    return {
+      flyer: f,
+      left: Math.round((3 + col * 10.4 + (rnd(f.rank * 7) - 0.5) * 5) * 100) / 100, // % of width
+      top: Math.round((6 + row * 14.5 + (rnd(f.rank * 13) - 0.5) * 6) * 100) / 100, // % of height
+    };
+  })
+  .sort((a, b) => b.flyer.rank - a.flyer.rank);
+/** Interacted cards get z-indexes above the whole unclicked pile. */
+const WALL_BASE_Z = WALL_FLYERS.length + 1;
 
 /**
  * The "sandriesOS" desktop: cork wallpaper with pinned flyer designs, a menu
@@ -45,8 +52,9 @@ const WALL_FLYERS = (flyersConfig as FlyersConfig).flyers
 export default function DesktopShell() {
   const [wins, setWins] = useState<WinState[]>([]);
   const [openFlyer, setOpenFlyer] = useState<FlyerItem | null>(null);
+  const [frontRank, setFrontRank] = useState<number | null>(null);
   const zCounter = useRef(1000);
-  const flyerZ = useRef(10);
+  const flyerZ = useRef(WALL_BASE_Z);
 
   const open = (app: AppDef) => {
     setWins((prev) => {
@@ -89,7 +97,10 @@ export default function DesktopShell() {
     : null;
 
   return (
-    <div className="cork-surface fixed inset-0 z-[100] overflow-hidden">
+    // select-none: the desktop is an app surface — a document-wide Cmd+A
+    // selection would otherwise turn card drags into native selection-drags
+    // that cancel our pointer events.
+    <div className="cork-surface fixed inset-0 z-[100] select-none overflow-hidden">
       {/* Real links for crawlers and no-JS visitors */}
       <nav className="sr-only" aria-label="Site sections">
         {DOCK_APPS.map((a) => (
@@ -97,6 +108,8 @@ export default function DesktopShell() {
             {a.title}
           </Link>
         ))}
+        {/* Not a dock app (the wall shows every design), but still a page */}
+        <Link href="/designs">Designs</Link>
       </nav>
 
       {/* Soft vignette settles the cork texture behind the content */}
@@ -111,11 +124,22 @@ export default function DesktopShell() {
 
       <MenuBar />
 
-      {/* Pinned flyer designs — the wallpaper is the design portfolio */}
-      <div className="absolute inset-0" aria-hidden>
+      {/* Pinned flyer designs — the wallpaper is the design portfolio.
+          pointer-events-none keeps the slot wrappers from hijacking clicks:
+          a dragged card's transform moves its visible hitbox, but the
+          untransformed wrapper box would otherwise sit invisibly at the old
+          slot and eat clicks meant for cards beneath it. FlyerCard re-enables
+          its own events with pointer-events-auto. */}
+      <div className="pointer-events-none absolute inset-0" aria-hidden>
         {WALL_FLYERS.map(({ flyer, left, top }) => (
           <div key={flyer.rank} className="absolute" style={{ left: `${left}%`, top: `${top}%` }}>
-            <FlyerCard flyer={flyer} onOpen={setOpenFlyer} nextZ={() => ++flyerZ.current} />
+            <FlyerCard
+              flyer={flyer}
+              onOpen={setOpenFlyer}
+              nextZ={() => ++flyerZ.current}
+              isFront={frontRank === flyer.rank}
+              onFront={() => setFrontRank(flyer.rank)}
+            />
           </div>
         ))}
       </div>

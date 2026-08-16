@@ -1,0 +1,970 @@
+{
+  "courses": [
+    {
+      "code": "CIS 102",
+      "title": "Intermediate Business Computing",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Fall 2023",
+      "termKey": "Fall 2023",
+      "countsToward": "CIS (AAS-T), CIS (ATA)",
+      "description": "Extends the CIS 100 focus on using computing technologies to manage a business and solve operational problems. Builds intermediate expertise with common productivity suites and database applications, centered on Microsoft Access as a database management system for creating, maintaining, and using databases that support business and IT functions.",
+      "outcomes": [
+        "Apply entry-level proficiency with workplace technologies such as Google G Suite, Office 365, and Remote Desktop",
+        "Analyze data and information using quantitative skills and critical thinking",
+        "Explain computer ethics, security risks, information privacy, disaster recovery planning, and backup strategies",
+        "Identify techniques for staying current with IT applications and career choices"
+      ],
+      "topics": [
+        "Database management system (DBMS) fundamentals",
+        "Creating, maintaining, and using Microsoft Access databases",
+        "Productivity suite applications in support of business functions",
+        "Analysis of data and information",
+        "Computer ethics, security risks, and information privacy",
+        "Disaster recovery planning and backup strategies",
+        "Final Access production project"
+      ],
+      "tools": [
+        "Microsoft Access 2019",
+        "Microsoft Office 365",
+        "Google G Suite",
+        "Remote Desktop",
+        "Microsoft Windows"
+      ],
+      "syllabus": "CIS 102 - Intermediate Business Computing - Syllabus - Fall 2023.pdf"
+    },
+    {
+      "code": "CIS 241",
+      "title": "Web Development I",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Fall 2023",
+      "termKey": "Fall 2023",
+      "countsToward": "CIS (ATA), Web App & Cloud Dev (AAS-T & ATA)",
+      "description": "Introduction to website development using HTML5 from a source-code perspective. The course covers tags, forms, linked objects, CSS3, frames, tables, and a first look at scripting, with students building multi-page websites using GUI HTML editors along with Git and GitHub. It grounds the fundamentals of web development that carry into user interfaces and related fields such as cybersecurity.",
+      "outcomes": [
+        "Perform content design and technical analysis of web applications and websites",
+        "Develop, debug, maintain, and document web pages with HTML5",
+        "Compare how different browsers render HTML5 documents",
+        "Apply the basic principles of web documents",
+        "Build pages using HTML5 forms, iframes, and tables",
+        "Style pages with inline, embedded, and cascading style sheets"
+      ],
+      "topics": [
+        "HTML5 tags and document structure",
+        "Forms, tables, frames, and iframes",
+        "Linked objects and multi-page site structure",
+        "CSS3 styling: inline, embedded, and external style sheets",
+        "Browser differences in rendering HTML5",
+        "Introduction to scripting",
+        "Version control with Git and GitHub"
+      ],
+      "tools": [
+        "HTML5",
+        "CSS3",
+        "Git",
+        "GitHub"
+      ],
+      "syllabus": "CIS 241 - Web Development I - Syllabus - Fall 2023.pdf"
+    },
+    {
+      "code": "CIS 250",
+      "title": "Database Theory and Design",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Fall 2023",
+      "termKey": "Fall 2023",
+      "countsToward": "All CIS/Web degrees",
+      "description": "Treats data as a business resource and examines database models from both a developer's and a user's viewpoint. Covers conceptual and logical data modeling and normalization through case studies, along with cloud computing, big data, data warehouses, and business intelligence. Work builds through interactive zyBook activities, weekly virtual class sessions, and a term project delivered in phased, portfolio-ready deliverables.",
+      "outcomes": [
+        "Explain fundamental principles of database theory and design",
+        "Research and analyze business data requirements",
+        "Identify and document high-level business rules for data modeling",
+        "Create and refine conceptual and logical data models",
+        "Select unique identifiers and normalize a data model",
+        "Describe the role of SQL in business and database contexts"
+      ],
+      "topics": [
+        "Data as a business resource",
+        "Database models from developer and user viewpoints",
+        "Business rules and data requirements",
+        "Conceptual and logical data modeling",
+        "Unique identifiers and data normalization through case studies",
+        "Cloud computing, big data, and data warehouses",
+        "Business intelligence",
+        "The role of SQL in databases"
+      ],
+      "tools": [
+        "MySQL",
+        "MySQL Workbench",
+        "Amazon WorkSpaces (pre-configured virtual lab environment)",
+        "zyBooks (Introduction to Databases with SQL)"
+      ],
+      "syllabus": "CIS 250 - Database Theory and Design - Syllabus - Fall 2023.pdf"
+    },
+    {
+      "code": "MATH 47",
+      "title": "College Prep Math",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Fall 2023",
+      "termKey": "Fall 2023",
+      "countsToward": "Developmental / prep (not applied to a degree)",
+      "description": "",
+      "outcomes": [],
+      "topics": [],
+      "tools": [],
+      "syllabus": null
+    },
+    {
+      "code": "CIS 233",
+      "title": "Systems Analysis",
+      "credits": "5.0",
+      "grade": "3.1",
+      "term": "Winter 2024",
+      "termKey": "Winter 2024",
+      "countsToward": "CIS (AAS-T), CIS (ATA), Web App & Cloud Dev (ATA)",
+      "description": "A practical, team-project-centered approach to real-world systems analysis and design. Covers the systems development life cycle, structured methodologies, and project planning. Working in teams, students analyze a case study, write requirements, and prepare a systems design specification document.",
+      "outcomes": [
+        "Describe the phases of the systems development life cycle",
+        "Apply root-cause analysis techniques to define the scope of a system problem",
+        "Diagram the components of a system using industry-standard modeling methods",
+        "Identify and write functional requirements for a system",
+        "Research and compare candidate solution options against system requirements",
+        "Evaluate and rate the feasibility of potential options",
+        "Propose a solution that satisfies defined requirements"
+      ],
+      "topics": [
+        "Systems development life cycle (SDLC)",
+        "Structured analysis and design methodologies",
+        "Project planning",
+        "Root-cause analysis and problem scoping",
+        "System modeling and diagramming",
+        "Functional requirements definition",
+        "Feasibility evaluation of solution options",
+        "Team case-study project and systems design specification"
+      ],
+      "tools": [
+        "Microsoft Word",
+        "Microsoft Excel",
+        "Microsoft PowerPoint"
+      ],
+      "syllabus": "CIS 233 - Systems Analysis - Syllabus.pdf"
+    },
+    {
+      "code": "CIS 242",
+      "title": "Web Development II: JavaScript and jQuery",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Winter 2024",
+      "termKey": "Winter 2024",
+      "countsToward": "Web App & Cloud Dev (AAS-T & ATA); CIS (ATA) elective",
+      "description": "Client-side scripting for the web, exploring embedded, inline, and external scripts along with functions, form validation, loops, conditional statements, strings, numbers, and DHTML. The course closes with an introduction to JavaScript frameworks, and students apply these technologies by building multi-page web sites as their final project.",
+      "outcomes": [
+        "Apply object-oriented client-side scripting to well-formed web pages",
+        "Work with client-side variables and data types and the operations they support",
+        "Write client-side functions, event handlers, and control structures",
+        "Validate form data through client-side scripting",
+        "Persist state using hidden form fields, query strings, and cookies",
+        "Explain core concepts of server-side programming and Node.js"
+      ],
+      "topics": [
+        "Embedding scripts: inline and external",
+        "Functions and event handlers",
+        "Variables, data types, strings, and numbers",
+        "Loops and conditional statements",
+        "Form validation",
+        "DHTML",
+        "Saving state with cookies, query strings, and hidden form fields",
+        "Introduction to JavaScript frameworks",
+        "Server-side programming concepts and Node.js"
+      ],
+      "tools": [
+        "JavaScript",
+        "Node.js"
+      ],
+      "syllabus": "CIS 242 - Web Development II JavaScript and jQuery - Syllabus - Winter 2024.pdf"
+    },
+    {
+      "code": "ENGL& 101",
+      "title": "English Composition I",
+      "credits": "5.0",
+      "grade": "2.2",
+      "term": "Winter 2024",
+      "termKey": "Winter 2024",
+      "countsToward": "All degrees (Communication)",
+      "description": "College-level, transfer composition course centered on writing essays that say what you mean in strong, clear language, with most writing growing out of assigned readings. Students draft, peer-review, and revise three formal essays — a profile, an analytical paper, and a rhetorical analysis — alongside weekly seminar papers, quizzes, and journal entries. The course also sharpens sentence-level grammar and punctuation and builds academic reading skills across a wide variety of texts.",
+      "outcomes": [
+        "Compose clear, well-organized essays through drafting, peer review, and revision",
+        "Develop argumentative, interpretive theses supported by summary, explication, and comparison and contrast",
+        "Analyze the rhetorical strategies and appeals of a text and evaluate their effectiveness",
+        "Write concise, grammatical prose with correct sentence-level punctuation",
+        "Apply academic reading strategies to a wide variety of texts",
+        "Write for specific audiences and respond to readings in seminar papers and discussion"
+      ],
+      "topics": [
+        "Profile essay writing",
+        "Analytical and interpretive writing",
+        "Rhetorical analysis and rhetorical appeals",
+        "Summary, explication, and comparison and contrast",
+        "Thesis development, drafting, and revision",
+        "Peer review and writing conferences",
+        "Sentence-level grammar and punctuation",
+        "Academic reading strategies and seminar papers"
+      ],
+      "tools": [],
+      "syllabus": "ENGL& 101 - English Composition I - Syllabus - Winter 2024.pdf"
+    },
+    {
+      "code": "MATH 77",
+      "title": "Introductory Algebra",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Winter 2024",
+      "termKey": "Winter 2024",
+      "countsToward": "Developmental / prep (not applied to a degree)",
+      "description": "",
+      "outcomes": [],
+      "topics": [],
+      "tools": [],
+      "syllabus": null
+    },
+    {
+      "code": "ART 225",
+      "title": "Introduction to Graphic Design",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Spring 2024",
+      "termKey": "Spring 2024",
+      "countsToward": "Web App & Cloud Dev (ATA)",
+      "description": "",
+      "outcomes": [],
+      "topics": [],
+      "tools": [],
+      "syllabus": null
+    },
+    {
+      "code": "BSTEC 260",
+      "title": "Supervision and Management: CD",
+      "credits": "5.0",
+      "grade": "3.4",
+      "term": "Spring 2024",
+      "termKey": "Spring 2024",
+      "countsToward": "CIS (ATA), Web App & Cloud Dev (ATA)",
+      "description": "Teaches how to respond to the common situations faced by an administrative office manager. Drawing on organizational behavior concepts, the course examines leadership, problem solving, and managing people in a globally diverse workplace, with coursework that includes writing assignments, discussions, quizzes, and online presentations.",
+      "outcomes": [
+        "Analyze the leadership characteristics an office manager should display",
+        "Define problems and carry out the problem-solving process as an office manager",
+        "Prepare staff and the office to participate in a globally diverse work environment",
+        "Diagnose office and employee management problems, implement solutions, and evaluate outcomes",
+        "Evaluate multicultural perspectives and the influence of culture on individuals and groups in the workplace",
+        "Set up and manage online meetings for internal and external audiences"
+      ],
+      "topics": [
+        "Organizational behavior: managing people and organizations",
+        "Leadership characteristics of administrative managers",
+        "The problem-solving process for office managers",
+        "Managing a globally diverse workforce",
+        "Culture and multicultural perspectives in the workplace",
+        "Setting up and running online meetings",
+        "Leadership book share presentation"
+      ],
+      "tools": [
+        "Microsoft Office"
+      ],
+      "syllabus": "BSTEC 260 - Supervision and Management CD - Syllabus - .docx"
+    },
+    {
+      "code": "CIS 243",
+      "title": "Web Development III: Server-Side Scripting",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Spring 2024",
+      "termKey": "Spring 2024",
+      "countsToward": "Web App & Cloud Dev (AAS-T & ATA); CIS (ATA) elective",
+      "description": "Server-side scripting for web pages, covering the fundamentals of functions, logical structure, and database connectivity used in creating websites. The course also takes up object-oriented principles, relational databases, and web frameworks, progressing through hands-on assignments toward a Competency Project due at the end of the term.",
+      "outcomes": [
+        "Distinguish client-side from server-side scripting",
+        "Choose the appropriate script type to build an interactive website with a data repository",
+        "Apply Model-View-Controller (MVC) principles and architecture to build a web site",
+        "Use variables and operators, including logical operators, in a scripting language",
+        "Write procedures and reusable code in a scripting language",
+        "Build web sites using web frameworks"
+      ],
+      "topics": [
+        "Server-side scripting fundamentals",
+        "Functions and logical structure",
+        "Database connectivity for websites",
+        "Object-oriented principles",
+        "Relational databases",
+        "Model-View-Controller (MVC) architecture",
+        "Web frameworks"
+      ],
+      "tools": [
+        "PHP",
+        "MySQL"
+      ],
+      "syllabus": "CIS 243 - Web Development III Server-Side Scripting - Syllabus - Spring 2024.pdf"
+    },
+    {
+      "code": "MATH 87",
+      "title": "Essentials of Intermediate Algebra",
+      "credits": "5.0",
+      "grade": "3.5",
+      "term": "Spring 2024",
+      "termKey": "Spring 2024",
+      "countsToward": "Developmental / prep (not applied to a degree)",
+      "description": "Introduces the core concepts of algebra, including operations on signed numbers, solving linear equations, exponents, algebraic fractions, and basic operations on polynomials, with a built-in review of arithmetic properties. Designed for students with little or no recent algebra experience, the course develops algebraic, critical-thinking, and problem-solving skills and prepares students for later courses such as MATH 97 or MATH& 141.",
+      "outcomes": [
+        "Model functional relationships from applications, words, tables, graphs, and symbols using function notation, expressing domains and ranges",
+        "Graph linear equations in two variables and interpret slope as a rate of change in applied contexts",
+        "Simplify expressions and solve linear equations, inequalities, and formulas, including ratio, percentage, and proportion applications",
+        "Construct linear models with point-slope and slope-intercept methods and use technology to find regression equations",
+        "Solve systems of two linear equations by graphing, elimination, and substitution",
+        "Perform polynomial operations and solve quadratic equations using factoring and the quadratic formula",
+        "Apply exponent rules to integer and rational exponents and simplify basic radical expressions",
+        "Graph exponential functions and use properties of logarithms to solve exponential equations and applied problems"
+      ],
+      "topics": [
+        "Signed numbers and arithmetic review",
+        "Linear equations, inequalities, and formulas",
+        "Graphing linear equations and slope",
+        "Linear models and regression",
+        "Systems of linear equations",
+        "Polynomials and factoring",
+        "Quadratic equations",
+        "Exponents and radical expressions",
+        "Exponential functions and logarithms"
+      ],
+      "tools": [
+        "XYZ Homework (online homework, eBook, and exams)",
+        "MathTV (instructional videos)"
+      ],
+      "syllabus": "MATH 87 - Essentials of Intermediate Algebra - Syllabus - Spring 2024.pdf"
+    },
+    {
+      "code": "ART 226",
+      "title": "Intermediate Graphic Design",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Fall 2024",
+      "termKey": "Fall 2024",
+      "countsToward": "Web App & Cloud Dev (ATA)",
+      "description": "Advanced graphic design course built around the full production process of researching and developing an individual design project. Over the quarter, a single project advances through research, UI mood boards, layout options, wireframes, and working prototypes, with prototype testing, critique, and design-history research along the way.",
+      "outcomes": [
+        "Apply techniques and skills of good craftsmanship to completed graphic design projects",
+        "Generate, consider, and evaluate problems in graphic design",
+        "Produce quality work through a variety of graphic design techniques and media",
+        "Apply basic compositional guidelines to design projects and assignments",
+        "Give and receive constructive critiques using language appropriate to the design domain",
+        "Research the history of design and document that research properly for presentation"
+      ],
+      "topics": [
+        "Design research",
+        "UI mood boards",
+        "UI layout options",
+        "Wireframing",
+        "Prototype development",
+        "Prototype testing and iteration",
+        "Creative arts vocabulary",
+        "Final project production"
+      ],
+      "tools": [
+        "Adobe Creative Cloud (InDesign)",
+        "Figma (working prototypes)",
+        "Google Workspace (Mail, Docs, Slides, Photos)",
+        "Kanopy"
+      ],
+      "syllabus": "ART 226 - Intermediate Graphic Design - Syllabus - Fall 2024.pdf"
+    },
+    {
+      "code": "CIS 251",
+      "title": "Structured Query Language (SQL)",
+      "credits": "5.0",
+      "grade": "3.6",
+      "term": "Fall 2024",
+      "termKey": "Fall 2024",
+      "countsToward": "CIS (AAS-T), CIS (ATA), Web App & Cloud Dev (ATA)",
+      "description": "Covers the core statements of Structured Query Language, including SELECT, INSERT, UPDATE, DELETE, and CREATE, with emphasis on extracting, updating, and maintaining relational databases. Weekly labs, assignments, quizzes, and discussions build toward a midterm, a final exam, and a final project, following the Murach's MySQL and SQL Queries for Mere Mortals texts.",
+      "outcomes": [
+        "Explain what SQL is and why it is such a powerful tool",
+        "Identify the major SQL data types",
+        "Create relational databases using SQL",
+        "Perform database maintenance and administration: insert, update, and delete data; create, drop, and modify tables",
+        "Write single-table and multi-table SELECT statements, including joins",
+        "Apply SQL functions and expressions proficiently",
+        "Explain the significance of indexes and create them"
+      ],
+      "topics": [
+        "SELECT statements and their purpose",
+        "Joins, Cartesian joins, and Cartesian products",
+        "Subqueries",
+        "GROUP BY and HAVING clauses",
+        "Table creation theory",
+        "Inserting, updating, and deleting data",
+        "SQL functions and expressions",
+        "Indexes"
+      ],
+      "tools": [
+        "MySQL"
+      ],
+      "syllabus": "CIS 251 - Structured Query Language (SQL) - Syllabus - Fall 2024.pdf"
+    },
+    {
+      "code": "CIS 280",
+      "title": "Career Planning and Professional Development",
+      "credits": "2.0",
+      "grade": "3.1",
+      "term": "Fall 2024",
+      "termKey": "Fall 2024",
+      "countsToward": "All CIS degrees",
+      "description": "Surveys the variety of jobs available to CIS graduates and develops practical job-hunting skills, including resume and cover letter writing and interviewing techniques. Industry certification exam testing is built into the curriculum: students must pass at least one certification exam, at no cost, to receive credit for the course.",
+      "outcomes": [
+        "Identify job titles available to graduates of the CIS program",
+        "Develop job search and interviewing skills",
+        "Create a resume and a variety of cover letters",
+        "Conduct online job searches and review trade journals and job listings",
+        "Describe campus and online resources for job search and placement",
+        "Prepare for and pass an industry certification exam"
+      ],
+      "topics": [
+        "Careers and job titles for CIS graduates",
+        "Resume and cover letter writing",
+        "Interviewing techniques",
+        "Online job search, trade journals, and want ads",
+        "Building a LinkedIn profile and professional networking groups",
+        "Certification exam selection, study, and scheduling",
+        "Job search and placement resources on campus and online"
+      ],
+      "tools": [
+        "GMetrix",
+        "ITS LearnKey",
+        "LinkedIn",
+        "LinkedIn Learning",
+        "Udemy",
+        "Microsoft Windows"
+      ],
+      "syllabus": "CIS 280 - Career Planning and Professional Development - Syllabus - Fall 2024.pdf"
+    },
+    {
+      "code": "MATH 11",
+      "title": "Support for Precalculus",
+      "credits": "3.0",
+      "grade": "S (Satisfactory)",
+      "term": "Fall 2024",
+      "termKey": "Fall 2024",
+      "countsToward": "Developmental / support (not applied to a degree)",
+      "description": "",
+      "outcomes": [],
+      "topics": [],
+      "tools": [],
+      "syllabus": null
+    },
+    {
+      "code": "CIS 244",
+      "title": "Web Development IV: Introduction to JavaScript Frameworks",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Winter 2025",
+      "termKey": "Winter 2025",
+      "countsToward": "Web App & Cloud Dev (AAS-T & ATA); CIS (ATA) elective",
+      "description": "Hands-on work with open-source content management systems (CMSs) and search engine optimization (SEO). Topics include Joomla!, WordPress, installing CMSs, creating and updating content, and SEO concepts and techniques, all applied while building multi-page websites and working toward a Competency Project due at the end of the term.",
+      "outcomes": [
+        "Determine a website's business model, from B2B and B2C to e-commerce, social networking, and blogs",
+        "Compare and contrast how different search engines work",
+        "Develop and implement an SEO plan",
+        "Create a baseline and keyword strategy for a website",
+        "Establish an ongoing plan for maintaining good SEO practices"
+      ],
+      "topics": [
+        "Open-source content management systems (CMSs)",
+        "CMS installation",
+        "Joomla!",
+        "WordPress",
+        "Creating and updating site content",
+        "SEO concepts and techniques",
+        "Website business models",
+        "Search engine behavior and comparison"
+      ],
+      "tools": [
+        "Joomla!",
+        "WordPress"
+      ],
+      "syllabus": "CIS 244 - Web Development IV Introduction to JavaScript Frameworks - Syllabus - Winter 2025.pdf"
+    },
+    {
+      "code": "CIS 245",
+      "title": "Web Development V: Introduction to CSS",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Winter 2025",
+      "termKey": "Winter 2025",
+      "countsToward": "Web App & Cloud Dev (AAS-T & ATA); CIS (ATA) elective",
+      "description": "Detailed study of combining CSS (Cascading Style Sheets) with HTML or XML to create rich, powerful websites. Topics span selectors, cascade and inheritance, text and font manipulation, layout, and positioning, along with the SASS and LESS style sheet languages and the Bootstrap framework. Hands-on assignments and mini-projects build toward a Competency Project due at the end of the term.",
+      "outcomes": [
+        "Build websites using CSS for page layout via inline styles, internal stylesheets, and external stylesheets",
+        "Create CSS selectors to target and style the elements of a web page",
+        "Apply advanced techniques with the SASS and LESS style sheet languages",
+        "Explain the advantages and disadvantages of CSS-based page layout",
+        "Design web pages that account for differences in access capabilities across cultures",
+        "Collaborate effectively within groups"
+      ],
+      "topics": [
+        "CSS selectors",
+        "Cascade and inheritance",
+        "Text and font manipulation",
+        "Layout and positioning",
+        "Inline styles, internal stylesheets, and external stylesheets",
+        "SASS (Syntactically Awesome Style Sheets) and LESS (Leaner CSS)",
+        "Bootstrap framework",
+        "Styling HTML and XML documents"
+      ],
+      "tools": [
+        "CSS",
+        "HTML",
+        "XML",
+        "SASS",
+        "LESS",
+        "Bootstrap"
+      ],
+      "syllabus": "CIS 245 - Web Development V Introduction to CSS - Syllabus - Winter 2025.pdf"
+    },
+    {
+      "code": "MGMT 270",
+      "title": "Project Management I: Project Scope and Requirements",
+      "credits": "5.0",
+      "grade": "3.1",
+      "term": "Winter 2025",
+      "termKey": "Winter 2025",
+      "countsToward": "Web App & Cloud Dev (ATA)",
+      "description": "",
+      "outcomes": [],
+      "topics": [],
+      "tools": [],
+      "syllabus": null
+    },
+    {
+      "code": "CIS 234",
+      "title": "Systems Design and Development",
+      "credits": "5.0",
+      "grade": "3.1",
+      "term": "Spring 2025",
+      "termKey": "Spring 2025",
+      "countsToward": "CIS (AAS-T), CIS (ATA), Web App & Cloud Dev (ATA)",
+      "description": "",
+      "outcomes": [],
+      "topics": [],
+      "tools": [],
+      "syllabus": null
+    },
+    {
+      "code": "CIS 246",
+      "title": "Web Dev VI: JavaScript Frameworks",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Spring 2025",
+      "termKey": "Spring 2025",
+      "countsToward": "Web App & Cloud Dev (AAS-T & ATA); CIS (ATA) elective",
+      "description": "Explores advanced techniques available in JavaScript frameworks and libraries such as jQuery, AJAX, MooTools, and Prototype. Students build intermediate websites and advanced user interfaces, weigh the trade-offs of different framework technologies, and document the choices behind their work. Coursework runs through discussions, quizzes, and two substantial projects.",
+      "outcomes": [
+        "Evaluate the advantages and disadvantages of advanced scripting techniques versus other web technologies",
+        "Build intermediate websites using jQuery, AJAX, MooTools, and other JavaScript framework libraries",
+        "Read, modify, and create XML documents through AJAX libraries",
+        "Create advanced user interfaces with MooTools, jQuery, and Prototype",
+        "Select and apply the appropriate JavaScript framework technology for a given page or site",
+        "Write clear documentation and communicate the assumptions behind technology choices",
+        "Collaborate effectively in group web development work"
+      ],
+      "topics": [
+        "Advanced scripting techniques in web pages and sites",
+        "JavaScript framework libraries: jQuery, MooTools, and Prototype",
+        "AJAX and working with XML documents",
+        "Building advanced user interfaces",
+        "Comparing and selecting framework technologies",
+        "Documenting web development technology choices",
+        "Tooling for sustainable websites"
+      ],
+      "tools": [
+        "JavaScript",
+        "jQuery",
+        "AJAX",
+        "MooTools",
+        "Prototype",
+        "XML"
+      ],
+      "syllabus": "CIS 246 - Web Development  VI JavaScript Frameworks - Syllabus - Spring 2025.pdf"
+    },
+    {
+      "code": "CIS 253",
+      "title": "Application and Cloud Development Tools",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Spring 2025",
+      "termKey": "Spring 2025",
+      "countsToward": "CIS (AAS-T), CIS (ATA), Web App & Cloud Dev (ATA)",
+      "description": "Introduces application development using web frameworks and the cloud, including n-tier development backed by a database or data repository. Students create the tables, forms, reports, and queries that support an application and develop it on cloud platforms such as Microsoft Azure, Amazon Web Services, and Google Cloud. The course also touches on styling web application interfaces, content management systems, and SEO techniques, progressing through hands-on assignments toward a competency project.",
+      "outcomes": [
+        "Explain the fundamentals of application design",
+        "Build a student-designed application using current tools and multiple-tier development with the web and a data repository",
+        "Describe how web frameworks and applications integrate with enterprise applications",
+        "Build a data repository with tables and reports, plus HTML/CSS, for a web-based application",
+        "Develop an application within a cloud platform such as AWS, Azure, or Google Cloud"
+      ],
+      "topics": [
+        "Application design fundamentals",
+        "N-tier (multiple-tier) development with a database or data repository",
+        "Web frameworks and integration with enterprise applications",
+        "Tables, forms, reports, and queries supporting an application",
+        "Cloud computing fundamentals in theory and practice",
+        "Deploying applications on cloud platforms (Azure, AWS, Google Cloud)",
+        "Styling interfaces for web applications",
+        "Content management systems and SEO techniques"
+      ],
+      "tools": [
+        "Microsoft Azure",
+        "Amazon Web Services (AWS)",
+        "Google Cloud",
+        "HTML/CSS"
+      ],
+      "syllabus": "CIS 253 - Application and Cloud Development Tools - Syllabus - Spring 2025.pdf"
+    },
+    {
+      "code": "STEM 100",
+      "title": "Career and College Success: STEM",
+      "credits": "3.0",
+      "grade": "4.0",
+      "term": "Spring 2025",
+      "termKey": "Spring 2025",
+      "countsToward": "All degrees (Career & College Success)",
+      "description": "",
+      "outcomes": [],
+      "topics": [],
+      "tools": [],
+      "syllabus": null
+    },
+    {
+      "code": "CIS 220",
+      "title": "Enterprise Architecture",
+      "credits": "5.0",
+      "grade": "3.7",
+      "term": "Summer 2025",
+      "termKey": "Summer 2025",
+      "countsToward": "CIS (AAS-T), CIS (ATA)",
+      "description": "Introduces enterprise systems architectures from a variety of perspectives, using conceptual frameworks such as the Zachman Framework. Examines considerations for managing enterprise application integration projects, the relationships between components of systems, and research into emerging technologies. Assessment spans assignments, quizzes, exams, projects, and discussions.",
+      "outcomes": [
+        "Recognize and describe common industry frameworks and models for enterprise architecture analysis and decision-making",
+        "Describe how business architectures, motivations, and goals shape information systems architectures and solutions",
+        "Research and evaluate data/information architecture designs",
+        "Research and evaluate application architecture designs",
+        "Research and evaluate technology solution and network architecture designs",
+        "Describe the concepts, benefits, and risks of architectural approaches such as multi-tier and service-oriented architectures",
+        "Evaluate and plan for the integration of emerging technologies",
+        "Evaluate total cost of ownership and return on investment for architecture alternatives"
+      ],
+      "topics": [
+        "Enterprise architecture frameworks and models, including the Zachman Framework",
+        "Business architecture, motivations, and goals",
+        "Data/information architectures",
+        "Application architectures",
+        "Technology solution and network architectures",
+        "Multi-tier and service-oriented architectures",
+        "Managing enterprise application integration projects",
+        "Researching and integrating emerging technologies",
+        "Total cost of ownership and return on investment analysis"
+      ],
+      "tools": [],
+      "syllabus": "CIS 220 - Enterprise Architecture - Syllabus - Summer 2025.pdf"
+    },
+    {
+      "code": "CS 115",
+      "title": "Principles of Computer Science",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Summer 2025",
+      "termKey": "Summer 2025",
+      "countsToward": "All CIS degrees",
+      "description": "",
+      "outcomes": [],
+      "topics": [],
+      "tools": [],
+      "syllabus": null
+    },
+    {
+      "code": "CMST& 210",
+      "title": "Interpersonal Communication: CD",
+      "credits": "5.0",
+      "grade": "2.9",
+      "term": "Fall 2025",
+      "termKey": "Fall 2025",
+      "countsToward": "CIS (AAS-T), Web App & Cloud Dev (AAS-T)",
+      "description": "Explores how communication shapes identity, self-perception, and relationships with others, including how internal communication influences the way we see ourselves and how others perceive us. Students build communicative competence by working through scholarly articles, TED Talks, films, and personal experiences, with special attention to identity, diversity, and intercultural communication. Small group work is an integral component of the course, delivered fully online and asynchronously.",
+      "outcomes": [
+        "Describe the effect of culture and society on communication interactions",
+        "Apply the elements of the Transactional Communication Model",
+        "Explain how perception, emotions, self-concept, verbal and nonverbal language, and listening influence interpersonal communication and relational dynamics",
+        "Practice active listening and articulate the value of that skill"
+      ],
+      "topics": [
+        "Culture, society, and communication",
+        "The Transactional Communication Model",
+        "Perception, emotions, and self-concept",
+        "Verbal and nonverbal language",
+        "Active listening",
+        "Identity, diversity, and intercultural communication",
+        "Small-group seminar discussion of scholarly articles, TED Talks, and films",
+        "Ethnographic research on personal communication",
+        "Personal Path career project with a workplace or academic interview"
+      ],
+      "tools": [
+        "YouTube (recording and sharing course videos)"
+      ],
+      "syllabus": "CMST& 210 - Interpersonal Communication - Syllabus - Fall 2025.pdf"
+    },
+    {
+      "code": "CS& 141",
+      "title": "Computer Science I Java",
+      "credits": "5.0",
+      "grade": "3.1",
+      "term": "Fall 2025",
+      "termKey": "Fall 2025",
+      "countsToward": "CIS (AAS-T), CIS (ATA), Web App & Cloud Dev (AAS-T)",
+      "description": "An introduction to programming in Java and the first course in a three-part computer science sequence. The opening weeks translate familiar constructs such as loops and conditionals into Java, after which the course moves into object-oriented programming. Coverage spans basic Java syntax, data types, control structures, methods, arrays, graphics, and object representation using classes, all within a framework of general object-oriented principles.",
+      "outcomes": [
+        "Write correct, efficient, and maintainable application programs using core Java constructs",
+        "Analyze real-world problems in quantitative terms and formulate programming solutions",
+        "Explain object-oriented concepts and structures as they appear in Java",
+        "Design and implement algorithms commonly used in computer programming",
+        "Collaborate in small groups to design, implement, and test a program"
+      ],
+      "topics": [
+        "Basic Java syntax and data types",
+        "Control structures (if/else, for loops, while loops)",
+        "Methods",
+        "Arrays",
+        "Object representation using classes",
+        "Graphics",
+        "Object-oriented programming principles"
+      ],
+      "tools": [
+        "Java (11.x or higher, with an editor/IDE)",
+        "jGRASP",
+        "CodeStepByStep"
+      ],
+      "syllabus": "CS& 141 - Computer Science I Java - Syllabus.pdf"
+    },
+    {
+      "code": "ENGL& 235",
+      "title": "Technical Writing",
+      "credits": "5.0",
+      "grade": "2.5",
+      "term": "Fall 2025",
+      "termKey": "Fall 2025",
+      "countsToward": "CIS (AAS-T), Web App & Cloud Dev (AAS-T)",
+      "description": "",
+      "outcomes": [],
+      "topics": [],
+      "tools": [],
+      "syllabus": null
+    },
+    {
+      "code": "CIS 100",
+      "title": "Computer Information Systems Foundations",
+      "credits": "5.0",
+      "grade": "3.8",
+      "term": "Winter 2026",
+      "termKey": "Winter 2026",
+      "countsToward": "All CIS degrees",
+      "description": "Introduces how computing technologies are applied to manage a business and solve operational problems. The course surveys careers in Computer Information Systems and builds hands-on skill with the productivity suites and applications that support business functions and information technology departments.",
+      "outcomes": [
+        "Assess personal IT career interests to identify realistic career paths and academic plans",
+        "Develop presentations for IT projects such as quantitative analyses, project timelines, and network and computing equipment diagrams",
+        "Apply entry-level proficiency with common workplace technologies and applications",
+        "Analyze, synthesize, and evaluate information related to computer technology"
+      ],
+      "topics": [
+        "Today's technologies: computers, devices, and the web",
+        "Connecting and communicating online: the Internet, websites, and media",
+        "Evaluating computers and mobile devices for home and work",
+        "Programs and apps: productivity, graphics, and security tools",
+        "Digital security, ethics, and privacy: threats, issues, and defenses",
+        "Computer components: processors, memory, and the cloud",
+        "Input and output: extending the capabilities of computers and mobile devices"
+      ],
+      "tools": [
+        "Microsoft Office 365",
+        "Google Sheets",
+        "Microsoft Windows",
+        "Triton Remote Desktop Cloud Environment (AppStream)",
+        "Cengage Unlimited courseware"
+      ],
+      "syllabus": "CIS 100 - Computer Information Systems Foundations - Syllabus - Winter 2026.pdf"
+    },
+    {
+      "code": "CS 142",
+      "title": "Computer Science II Java",
+      "credits": "5.0",
+      "grade": "3.2",
+      "term": "Winter 2026",
+      "termKey": "Winter 2026",
+      "countsToward": "CIS (AAS-T), CIS (ATA), Web App & Cloud Dev (AAS-T)",
+      "description": "A continuation of Java programming centered on object-oriented design and foundational data structures. The quarter progresses from arrays and designing classes through inheritance, polymorphism, and exception handling, then into recursion and algorithm analysis, file input/output, and core structures such as lists, stacks, queues, and linked lists, closing with sorting and searching algorithms.",
+      "outcomes": [
+        "Design Java classes applying principles such as cohesion, coupling, and immutability",
+        "Apply inheritance, composition, polymorphism, abstract classes, and interfaces",
+        "Handle runtime errors with Java exceptions, including custom exception types",
+        "Implement recursive solutions and analyze efficiency using Big O, Big Theta, and Omega",
+        "Read and write data through text and random-access file I/O with files and streams",
+        "Build and use data structures including lists, stacks, queues, sets, and linked lists",
+        "Implement searching and sorting algorithms such as binary search, merge sort, and quick sort"
+      ],
+      "topics": [
+        "Arrays, array lists, and arrays in classes and methods",
+        "Object-oriented class design: cohesion and coupling, side effects, immutable classes",
+        "Overriding versus overloading, scope and packages, static methods and fields",
+        "Inheritance, composition, polymorphism, dynamic method binding, and abstract classes",
+        "Inner classes, nested classes, and interfaces",
+        "Exception handling, try/catch/finally, and designing custom exception types",
+        "Recursion, analysis of algorithms, Big O notation, and the Master Theorem",
+        "Text and random-access file I/O; the software life cycle",
+        "Lists, stacks, queues, collections, hash sets, tree sets, and linked lists",
+        "Binary search and sorting: selection sort, quick sort, and merge sort"
+      ],
+      "tools": [
+        "Java"
+      ],
+      "syllabus": "CS 142 - Computer Science II Java - Syllabus - Winter 2026.pdf"
+    },
+    {
+      "code": "MATH& 141",
+      "title": "Precalculus I",
+      "credits": "5.0",
+      "grade": "3.2",
+      "term": "Winter 2026 (final; repeated)",
+      "termKey": "Winter 2026",
+      "countsToward": "All degrees (Quantitative)",
+      "description": "First quarter of a two-quarter precalculus sequence focused on the general nature of functions. The course studies linear, quadratic, polynomial, rational, exponential, and logarithmic functions, along with their graphs and real-world applications. Taught in a hybrid, flipped-classroom format, with weekly readings, videos, and online homework completed outside of class.",
+      "outcomes": [
+        "Solve problems involving functions and the related concepts of domain, range, symmetry, composition, and inverses across graphical, symbolic, and numerical forms",
+        "Graph linear, quadratic, polynomial, rational, exponential, and logarithmic functions and interpret their important graphical features",
+        "Determine real and complex zeros of polynomial and rational functions algebraically and relate them to the functions' graphs",
+        "Solve equations and inequalities using graphical, algebraic, and technology-based methods",
+        "Model situations described in words with functions and solve applied problems",
+        "Communicate mathematics using correct notation and language"
+      ],
+      "topics": [
+        "Functions: domain, range, symmetry, composition, and inverses",
+        "Linear and quadratic functions",
+        "Polynomial and rational functions",
+        "Exponential and logarithmic functions",
+        "Real and complex zeros of polynomials",
+        "Equations and inequalities",
+        "Graphing and interpreting graphical features",
+        "Modeling and applications of functions"
+      ],
+      "tools": [
+        "WAMAP (online homework, videos, and course management)",
+        "Desmos (graphing software)"
+      ],
+      "syllabus": "MATH& 141 - Precalculus I - Syllabus - Winter 2026.pdf (Fall 2024 version also on file)"
+    },
+    {
+      "code": "CS 143",
+      "title": "Computer Science III Java",
+      "credits": "5.0",
+      "grade": "4.0",
+      "term": "Spring 2026",
+      "termKey": "Spring 2026",
+      "countsToward": "CIS (AAS-T), CIS (ATA), Web App & Cloud Dev (AAS-T)",
+      "description": "A course in Java data structures and the third in the three-course Java sequence. Building on mastery of Java basics and object-oriented programming, students work with the standard built-in collection classes and also implement the underlying structures themselves. Topics include lists, stacks, queues, various binary trees, inheritance and interfaces, algorithms, and generics.",
+      "outcomes": [
+        "Implement core data structures such as lists, sets, and maps in both array and linked-node forms",
+        "Implement and debug recursive algorithms as a tool for building data structures",
+        "Analyze complexity and performance trade-offs of classical algorithms using Big-O notation",
+        "Decompose a large-scale process into object-oriented classes and interfaces forming a unified solution"
+      ],
+      "topics": [
+        "Java review",
+        "ArrayLists and LinkedLists",
+        "IntLists",
+        "Stacks and queues",
+        "Sets, maps, and complexity",
+        "Trees and binary search trees",
+        "B-Trees and LLRBs",
+        "Hashing",
+        "Heaps",
+        "Generics and standard collection classes"
+      ],
+      "tools": [
+        "Java (11.x or higher, with an editor/IDE)",
+        "jGRASP",
+        "CodeStepByStep"
+      ],
+      "syllabus": "SPRING 2026_CS_143_1.pdf"
+    },
+    {
+      "code": "PHIL& 120",
+      "title": "Symbolic Logic",
+      "credits": "5.0",
+      "grade": "3.4",
+      "term": "Spring 2026",
+      "termKey": "Spring 2026",
+      "countsToward": "CIS (AAS-T), Web App & Cloud Dev (AAS-T) [Social Sciences]",
+      "description": "An introduction to modern symbolic logic emphasizing sentence logic and quantificational logic, each with translation and proofs. The course opens with fundamental concepts of logical theory - argument, premise, conclusion, deduction, induction, and validity - then moves through categorical propositions, propositional logic, predicate logic, truth-functional operators, and formal proofs of validity, concentrating on the formal rather than informal side of logic.",
+      "outcomes": [
+        "Apply core vocabulary of logical theory such as validity, soundness, deduction, and induction",
+        "Translate English statements and arguments into truth-functional and predicate logic notation",
+        "Use truth tables to classify statements, test logical relations, and evaluate argument validity",
+        "Construct natural deduction proofs in propositional logic with rules of implication and replacement",
+        "Construct natural deduction proofs in predicate logic, including relational predicates and multiple quantifiers",
+        "Select appropriate proof strategies, including direct, conditional, and indirect proof"
+      ],
+      "topics": [
+        "Fundamental concepts: argument, premise, conclusion, deduction, induction, and validity",
+        "Categorical propositions",
+        "Propositional (sentence) logic and translation into symbolic form",
+        "Truth-functional operators and truth tables",
+        "Natural deduction and formal proofs of validity in propositional logic",
+        "Predicate (quantificational) logic with translation and proofs",
+        "Relational predicates and multiple quantifiers",
+        "Proof strategies: direct, conditional, and indirect proof"
+      ],
+      "tools": [
+        "WebAssign",
+        "MindTap"
+      ],
+      "syllabus": "syllabus.pdf"
+    },
+    {
+      "code": "PHYS& 114",
+      "title": "General Physics I w/Lab",
+      "credits": "5.0",
+      "grade": "3.0",
+      "term": "Spring 2026",
+      "termKey": "Spring 2026",
+      "countsToward": "CIS (AAS-T), Web App & Cloud Dev (AAS-T) [Natural Sciences]",
+      "description": "General physics for students interested in becoming scientists or engineers, covering kinematics, dynamics, momentum, and energy. The class runs as a hybrid, pairing online lecture content with in-person laboratory sessions, and approaches physics the way a mathematics course is studied: through steady practice and problem solving by hand.",
+      "outcomes": [
+        "Explain the basic principles of Newtonian dynamics, kinematics, energy, and momentum",
+        "Apply the scientific method to the study of physical principles",
+        "Solve quantitative problems and build fluency in working problems from physical principles",
+        "Analyze physical systems to determine which information and principles govern their behavior",
+        "Communicate fundamental physics knowledge to peers using appropriate vocabulary"
+      ],
+      "topics": [
+        "Mathematics for physics",
+        "Motion in two dimensions",
+        "Kinematics",
+        "Newton's laws and their applications",
+        "Work and kinetic energy",
+        "Conservation of energy",
+        "Linear momentum",
+        "Statics and torque",
+        "Rotational dynamics"
+      ],
+      "tools": [
+        "Scientific or graphing calculator (TI-30XIIS recommended)"
+      ],
+      "syllabus": "SPRING2026_PHYS&_114_01-1.pdf"
+    }
+  ]
+}

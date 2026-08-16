@@ -1,6 +1,7 @@
 "use client";
 
 import type { AppDef } from "@/components/desktop/apps";
+import AppIcon from "@/components/desktop/AppIcon";
 
 /**
  * Bottom dock: floating translucent shelf of section apps. Open apps get a
@@ -33,10 +34,10 @@ export default function Dock({
               {app.title}
             </span>
             <span
-              className="flex h-11 w-11 items-center justify-center rounded-[12px] border border-white/10 text-[22px] shadow-[inset_0_1px_0_rgba(255,255,255,.15),0_2px_6px_rgba(0,0,0,.35)] transition-transform duration-150 group-hover:-translate-y-1.5 group-hover:scale-105"
+              className="flex h-11 w-11 items-center justify-center rounded-[12px] border border-white/10 text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,.15),0_2px_6px_rgba(0,0,0,.35)] transition-transform duration-150 group-hover:-translate-y-1.5 group-hover:scale-105"
               style={{ background: app.tint }}
             >
-              {app.emoji}
+              <AppIcon name={app.icon} size={22} />
             </span>
             <span className={`h-1 w-1 rounded-full ${open ? "bg-accent-soft" : "bg-transparent"}`} />
           </button>
